@@ -1,0 +1,46 @@
+
+@font-face {
+    font-family: 'HillHouse';
+    src: url('fonts/HillHouse.ttf') format('truetype');
+}
+
+* {
+    font-family: HillHouse;
+}
+
+body {
+    background-color: rgb(237, 237, 237);
+    padding: 5%;
+}
+
+.blank-box {
+    background-color: white;
+    border-style: solid;
+    border-color: rgb(35, 48, 61);
+}
+
+.center {
+     text-align: center;
+}
+
+
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+  }
+  
+  /* ==========================================
+  Single-colored icons can be modified like so:
+  .icon-name {
+    font-size: 32px;
+    color: red;
+  }
+  ========================================== */
+  
+  .icon-youtube2 {
+    width: 2.5087890625em;
+  }
