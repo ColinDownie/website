@@ -1,0 +1,178 @@
+/* ---------------------------------------------------------
+   GLOBAL PAGE STYLE
+--------------------------------------------------------- */
+
+.hor-body.hor-parchment {
+  background: #f7f3e8;
+  color: #2a2a2a;
+  font-family: "Georgia", "Times New Roman", serif;
+  line-height: 1.7;
+}
+
+/* Subtle parchment texture overlay */
+.hor-body.hor-parchment::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: url('images/parchment-texture.png');
+  opacity: 0.25;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Container */
+.hor-container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+/* ---------------------------------------------------------
+   TYPOGRAPHY
+--------------------------------------------------------- */
+
+.hor-hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+.hor-hero-subtitle {
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+.hor-section-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #c9b27c;
+  padding-bottom: 0.5rem;
+}
+
+.hor-division-title {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hor-division-tagline {
+  font-style: italic;
+  opacity: 0.7;
+  margin-bottom: 1.5rem;
+}
+
+/* Illuminated manuscript drop caps */
+.hor-section p:first-letter,
+.hor-division p:first-letter {
+  font-size: 3rem;
+  float: left;
+  line-height: 1;
+  padding-right: 0.3rem;
+  color: #b08a3c;
+  font-family: "Georgia", serif;
+}
+
+/* ---------------------------------------------------------
+   HERO SECTION
+--------------------------------------------------------- */
+
+.hor-hero-manuscript {
+  text-align: center;
+  padding: 6rem 0 4rem;
+  background: rgba(255, 255, 255, 0.4);
+  border-bottom: 3px solid #c9b27c;
+  position: relative;
+}
+
+/* Crest watermark behind hero */
+.hor-hero-manuscript::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url('images/crest-watermark.png') center/300px no-repeat;
+  opacity: 0.08;
+  pointer-events: none;
+}
+
+/* ---------------------------------------------------------
+   DIVISION SECTIONS
+--------------------------------------------------------- */
+
+.hor-division {
+  padding: 3rem 0;
+  border-bottom: 1px solid #d8c9a3;
+  position: relative;
+}
+
+/* Subtle textile mathematics border */
+.hor-division::after {
+  content: "24 | 4 | 4 | 4 | 24 | 24 | 2 | 24";
+  position: absolute;
+  bottom: -1.2rem;
+  left: 0;
+  font-size: 0.8rem;
+  opacity: 0.25;
+  letter-spacing: 2px;
+  font-family: "Courier New", monospace;
+}
+
+/* Mandate list */
+.hor-division-mandate {
+  margin-top: 1rem;
+  padding-left: 1.2rem;
+}
+
+.hor-division-mandate li {
+  margin-bottom: 0.5rem;
+}
+
+/* ---------------------------------------------------------
+   DIVISION INDEX
+--------------------------------------------------------- */
+
+.hor-division-index ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hor-division-index li {
+  margin: 0.4rem 0;
+}
+
+.hor-division-index a {
+  text-decoration: none;
+  color: #5a4520;
+  font-weight: bold;
+}
+
+.hor-division-index a:hover {
+  color: #b08a3c;
+}
+
+/* ---------------------------------------------------------
+   GOVERNANCE SECTION
+--------------------------------------------------------- */
+
+.hor-governance {
+  padding: 4rem 0;
+  background: rgba(255, 255, 255, 0.5);
+  border-top: 3px solid #c9b27c;
+}
+
+/* ---------------------------------------------------------
+   FOOTER
+--------------------------------------------------------- */
+
+.hor-footer {
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
