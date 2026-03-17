@@ -1,0 +1,105 @@
+/* HERO */
+.pantheon-hero {
+  text-align: center;
+  padding: 140px 20px 80px;
+  position: relative;
+}
+
+.pantheon-hero h1 {
+  font-size: 3rem;
+  color: #b08a3c;
+}
+
+.pantheon-tagline {
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+/* Crest watermark */
+.pantheon-crest {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 520px;
+  height: 520px;
+  background: url('crest.png') no-repeat center/contain;
+  opacity: 0.05;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+/* MAIN */
+.pantheon-main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px 80px;
+}
+
+/* SECTIONS */
+.pantheon-section {
+  margin: 50px 0;
+}
+
+.pantheon-section h2 {
+  color: #b08a3c;
+  margin-bottom: 16px;
+}
+
+.pantheon-section p {
+  line-height: 1.6;
+}
+
+/* LISTS */
+.pantheon-list li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* TRIAD */
+.pantheon-triad,
+.pantheon-new {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.pantheon-entity {
+  background: rgba(255,255,255,0.5);
+  padding: 18px 20px;
+  border-left: 4px solid #b08a3c;
+  border-radius: 4px;
+}
+
+/* GALLERY */
+.pantheon-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.pantheon-gallery-item {
+  background: rgba(255,255,255,0.4);
+  height: 200px;
+  border-radius: 4px;
+  border-left: 4px solid #b08a3c;
+}
+
+/* CTA */
+.pantheon-cta {
+  text-align: center;
+  margin-top: 60px;
+}
+
+/* FADE-IN */
+.hor-fade {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.8s ease;
+}
+
+.hor-fade.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
