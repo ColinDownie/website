@@ -1,6 +1,9 @@
 /* ---------------------------------------------------------
    GLOBAL PAGE STYLE
 --------------------------------------------------------- */
+html {
+  scroll-behavior: smooth;
+}
 
 .hor-body.hor-parchment {
   background: #f7f3e8;
@@ -175,4 +178,9 @@
   padding: 2rem 0;
   font-size: 0.9rem;
   opacity: 0.7;
+}
+/* Active link highlight */
+.hor-sidebar-nav a.active {
+  color: #b08a3c;
+  text-decoration: underline;
 }
