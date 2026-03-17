@@ -207,3 +207,30 @@ html {
 .hor-back-to-top:hover {
   opacity: 1;
 }
+/* Sidebar toggle button (mobile) */
+.hor-sidebar-toggle {
+  display: none;
+  position: fixed;
+  top: 80px;
+  left: 20px;
+  z-index: 2000;
+  background: #b08a3c;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  font-size: 1rem;
+  border-radius: 4px;
+}
+
+/* Mobile behaviour */
+@media (max-width: 900px) {
+  .hor-sidebar-toggle {
+    display: block;
+  }
+  .hor-sidebar {
+    display: none;
+  }
+  .hor-sidebar.open {
+    display: block;
+  }
+}
