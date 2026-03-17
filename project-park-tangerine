@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Park Tangerine – House of Ross</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="project-park-tangerine.css">
+</head>
+
+<body class="hor-body hor-parchment">
+
+<header class="hor-header">
+  <!-- global header -->
+</header>
+
+<button class="hor-sidebar-toggle">☰ Menu</button>
+
+<aside class="hor-sidebar">
+  <nav class="hor-sidebar-nav">
+    <h2 class="hor-sidebar-title">Navigation</h2>
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="production-bible-index.html">Production Bible</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</aside>
+
+<main class="tang-main">
+
+  <!-- HERO -->
+  <section class="tang-hero hor-fade">
+    <div class="tang-crest"></div>
+    <h1>Park Tangerine</h1>
+    <p class="tang-tagline">A Citrus‑Coded Mythic Playground</p>
+  </section>
+
+  <!-- OVERVIEW -->
+  <section class="tang-section hor-fade">
+    <h2>Overview</h2>
+    <p>
+      Park Tangerine is a vibrant expansion realm within the Ross Universe — a surreal, citrus‑infused world where
+      clan colours, playful rituals, and mythic symbolism collide. It is the bright, joyful counterpoint to the
+      heavier mythic arcs of Freedom, Everlight, and Clan Legacy.
+    </p>
+    <p>
+      Though whimsical on the surface, Park Tangerine is built on emotional architecture and lineage logic — a place
+      where characters explore identity, unity, and transformation through humour and colour.
+    </p>
+  </section>
+
+  <!-- DISTRICTS -->
+  <section class="tang-section hor-fade">
+    <h2>Districts of Park Tangerine</h2>
+
+    <div class="tang-districts">
+
+      <div class="tang-district">
+        <h3>The Citrus Grove</h3>
+        <p>A glowing orchard where fruit carries emotional resonance and mythic properties.</p>
+      </div>
+
+      <div class="tang-district">
+        <h3>The Zest Arena</h3>
+        <p>A playful battleground for clan games, rituals, and chaotic competitions.</p>
+      </div>
+
+      <div class="tang-district">
+        <h3>The Peel Market</h3>
+        <p>A bustling bazaar of oddities, runes, snacks, and clan‑coded artefacts.</p>
+      </div>
+
+      <div class="tang-district">
+        <h3>The Tangerine Falls</h3>
+        <p>A shimmering waterfall of orange light — a place of reflection and emotional reset.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CHARACTERS -->
+  <section class="tang-section hor-fade">
+    <h2>Key Figures</h2>
+
+    <div class="tang-characters">
+
+      <div class="tang-character">
+        <h3>The Zesty Keeper</h3>
+        <p>Guardian of the grove. Speaks in riddles. Smells faintly of citrus.</p>
+      </div>
+
+      <div class="tang-character">
+        <h3>The Peel Twins</h3>
+        <p>Chaotic duo who run the Peel Market. Always hustling. Always arguing.</p>
+      </div>
+
+      <div class="tang-character">
+        <h3>The Orange Runner</h3>
+        <p>A mythic athlete who races through the Zest Arena leaving trails of light.</p>
+      </div>
+
+      <div class="tang-character">
+        <h3>Z (Citrus Variant)</h3>
+        <p>A playful, lighter version of Z — curious, bright, and emotionally open.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- RITUALS -->
+  <section class="tang-section hor-fade">
+    <h2>Rituals & Mythic Events</h2>
+
+    <div class="tang-rituals">
+
+      <div class="tang-ritual">
+        <h3>The Great Peel Off</h3>
+        <p>A chaotic clan competition involving speed, creativity, and citrus engineering.</p>
+      </div>
+
+      <div class="tang-ritual">
+        <h3>The Zest Parade</h3>
+        <p>A luminous procession celebrating unity, colour, and emotional expression.</p>
+      </div>
+
+      <div class="tang-ritual">
+        <h3>The Orange Eclipse</h3>
+        <p>A rare celestial event where the sky turns tangerine and runes glow.</p>
+      </div>
+
+      <div class="tang-ritual">
+        <h3>The Unity Squeeze</h3>
+        <p>A symbolic ritual where clans merge their citrus essences into harmony.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- VISUAL LANGUAGE -->
+  <section class="tang-section hor-fade">
+    <h2>Visual Language</h2>
+    <p>
+      Park Tangerine blends bright oranges, soft yellows, and warm greens with playful shapes, rounded silhouettes,
+      and citrus‑coded motifs. It is the most colourful branch of the Ross Universe.
+    </p>
+
+    <div class="tang-gallery">
+      <div class="tang-gallery-item"></div>
+      <div class="tang-gallery-item"></div>
+      <div class="tang-gallery-item"></div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="tang-section hor-fade tang-cta">
+    <a href="projects.html" class="hor-button">Back to Projects</a>
+  </section>
+
+</main>
+
+<footer class="hor-footer">
+  <!-- global footer -->
+</footer>
+
+<script src="project-park-tangerine.js"></script>
+
+</body>
+</html>
