@@ -1,8 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> <!--additional information and links for our webpage-->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body class="division-projects">
+<head>
+  <meta charset="UTF-8">
+  <title>House of Ross – Projects</title>
 
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="projects.css">
+</head>
+
+<body class="hor-body hor-parchment">
+
+<header class="hor-header">
+  <!-- your global header -->
+</header>
+
+<button class="hor-sidebar-toggle">☰ Menu</button>
+
+<aside class="hor-sidebar">
+  <nav class="hor-sidebar-nav">
+    <h2 class="hor-sidebar-title">Navigation</h2>
+    <a href="index.html">Home</a>
+    <a href="production-bible-index.html">Production Bible</a>
+    <a href="projects.html" class="active">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</aside>
+
+<main class="hor-main hor-main--projects">
+
+  <!-- HERO -->
+  <section class="projects-hero hor-fade">
+    <h1>Our Projects</h1>
+    <p class="projects-subtitle">The Worlds We Are Building</p>
+  </section>
+
+  <!-- FILTERS -->
+  <section class="projects-filters hor-fade">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="cinematic">Cinematic Worlds</button>
+    <button class="filter-btn" data-filter="mythic">Mythic Lore</button>
+    <button class="filter-btn" data-filter="bibles">Studio Bibles</button>
+    <button class="filter-btn" data-filter="brand">Brand Systems</button>
+    <button class="filter-btn" data-filter="fashion">Fashion & Textile</button>
+    <button class="filter-btn" data-filter="music">Music‑Driven</button>
+    <button class="filter-btn" data-filter="experimental">Experimental</button>
+  </section>
+
+  <!-- PROJECT GRID -->
+  <section class="projects-grid">
+
+    <!-- PROJECT CARD TEMPLATE -->
+    <a href="project-freedom.html" class="project-card hor-fade" data-category="cinematic mythic">
+      <h3>The Freedom Project</h3>
+      <p>The flagship mythic‑cinematic universe of the Ross Dynasty.</p>
+    </a>
+
+    <a href="project-elemental-z.html" class="project-card hor-fade" data-category="cinematic music experimental">
+      <h3>Elemental Warrior Z</h3>
+      <p>The hybrid evolution of the successor.</p>
+    </a>
+
+    <a href="project-clan-legacy.html" class="project-card hor-fade" data-category="mythic cinematic">
+      <h3>Clan Legacy</h3>
+      <p>The futuristic clan mythology.</p>
+    </a>
+
+    <a href="project-pantheon.html" class="project-card hor-fade" data-category="mythic">
+      <h3>The Pantheon</h3>
+      <p>Ealdric, Maerwyn, Tharion, Riot Seraph, Starmaker.</p>
+    </a>
+
+    <a href="project-spice-boys.html" class="project-card hor-fade" data-category="cinematic experimental">
+      <h3>Spice Boys</h3>
+      <p>Plasticine chaos with mythic heart.</p>
+    </a>
+
+    <a href="project-fashion.html" class="project-card hor-fade" data-category="fashion">
+      <h3>Ross House Fashion Archive</h3>
+      <p>Sportswear, gala suiting, golf attire.</p>
+    </a>
+
+    <a href="production-bible-index.html" class="project-card hor-fade" data-category="bibles">
+      <h3>Production Bible</h3>
+      <p>The cinematic constitution.</p>
+    </a>
+
+    <a href="studio-bible.html" class="project-card hor-fade" data-category="bibles">
+      <h3>Studio Bible</h3>
+      <p>The creative doctrine.</p>
+    </a>
+
+    <a href="project-consultancy.html" class="project-card hor-fade" data-category="brand">
+      <h3>The Ross Consultancy</h3>
+      <p>Brand systems, governance, lineage.</p>
+    </a>
+
+    <a href="project-animation-experiments.html" class="project-card hor-fade" data-category="experimental cinematic">
+      <h3>Mythic Animation Experiments</h3>
+      <p>Painterly → graphic novel → realism.</p>
+    </a>
+
+    <a href="project-z-performance.html" class="project-card hor-fade" data-category="music cinematic">
+      <h3>Z Performance System</h3>
+      <p>Hybrid avatar performance.</p>
+    </a>
+
+  </section>
+
+</main>
+
+<footer class="hor-footer">
+  <!-- your global footer -->
+</footer>
+
+<script src="projects.js"></script>
+
+</body>
+</html>
 
