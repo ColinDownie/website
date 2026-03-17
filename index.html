@@ -1,1354 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        MMC Test Site
-    </title>
 <head>
-  <style>
-      padding: var(--space-lg);
-color: var(--ross-gold);
-border-color: var(--ross-sandline);
-      /* -------------------------------------- */
-/* GLOBAL TYPOGRAPHY & LAYOUT             */
-/* -------------------------------------- */
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "Gill Sans", "Segoe UI", system-ui, sans-serif;
-  color: var(--ross-charcoal);
-  line-height: 1.6;
-  background: #fff;
-}
-
-.ross-home {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: var(--space-xl) var(--space-md);
-}
-/* -------------------------------------- */
-/* DIVISION HERO BANNERS                  */
-/* -------------------------------------- */
-
-.division-hero {
-  padding: var(--space-xxl) var(--space-md);
-  text-align: center;
-  color: #fff;
-  margin-bottom: var(--space-xl);
-  background-size: cover;
-  background-position: center;
-  position: relative;
-}
-
-.division-hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.45);
-}
-
-.division-hero-inner {
-  position: relative;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.division-hero h1 {
-  font-size: var(--font-xxl);
-  letter-spacing: var(--track-wider);
-  text-transform: uppercase;
-  margin-bottom: var(--space-sm);
-}
-
-.division-hero p {
-  font-size: var(--font-md);
-  opacity: 0.9;
-}
-/* VISUAL CONCEPTS */
-.division-hero.visual {
-  background-image: linear-gradient(rgba(196,106,59,0.4), rgba(196,106,59,0.4)),
-    url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1950&q=80');
-}
-
-/* MEDIA CONCEPTS */
-.division-hero.media {
-  background-image: linear-gradient(rgba(58,79,143,0.4), rgba(58,79,143,0.4)),
-    url('https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=1950&q=80');
-}
-
-/* MARKETING CONCEPTS */
-.division-hero.marketing {
-  background-image: linear-gradient(rgba(140,47,57,0.4), rgba(140,47,57,0.4)),
-    url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1950&q=80');
-}
-
-/* DESIGN CONCEPTS */
-.division-hero.design {
-  background-image: linear-gradient(rgba(74,94,122,0.4), rgba(74,94,122,0.4)),
-    url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1950&q=80');
-}
-
-/* CLOTHING CONCEPTS */
-.division-hero.clothing {
-  background-image: linear-gradient(rgba(107,122,60,0.4), rgba(107,122,60,0.4)),
-    url('https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=1950&q=80');
-}
-
-/* GAME CONCEPTS */
-.division-hero.game {
-  background-image: linear-gradient(rgba(42,140,130,0.4), rgba(42,140,130,0.4)),
-    url('https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1950&q=80');
-}
-
-/* STORY CONCEPTS */
-.division-hero.story {
-  background-image: linear-gradient(rgba(138,90,59,0.4), rgba(138,90,59,0.4)),
-    url('https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1950&q=80');
-}
-
-/* SOUND & MUSIC */
-.division-hero.sound {
-  background-image: linear-gradient(rgba(166,124,82,0.4), rgba(166,124,82,0.4)),
-    url('https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=1950&q=80');
-}
-
-/* EXPERIENCE */
-.division-hero.experience {
-  background-image: linear-gradient(rgba(122,92,158,0.4), rgba(122,92,158,0.4)),
-    url('https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1950&q=80');
-}
-
-/* FUTUREFORM */
-.division-hero.future {
-  background-image: linear-gradient(rgba(212,106,46,0.4), rgba(212,106,46,0.4)),
-    url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1950&q=80');
-}
-
-/* MENTORING */
-.division-hero.mentoring {
-  background-image: linear-gradient(rgba(155,175,136,0.4), rgba(155,175,136,0.4)),
-    url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1950&q=80');
-}
-
-/* COLLABORATION */
-.division-hero.collab {
-  background-image: linear-gradient(rgba(63,99,181,0.4), rgba(63,99,181,0.4)),
-    url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1950&q=80');
-}
-
-/* EDUCATION */
-.division-hero.education {
-  background-image: linear-gradient(rgba(62,107,79,0.4), rgba(62,107,79,0.4)),
-    url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1950&q=80');
-}
-
-/* WELLBEING */
-.division-hero.wellbeing {
-  background-image: linear-gradient(rgba(201,138,154,0.4), rgba(201,138,154,0.4)),
-    url('https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=1950&q=80');
-}
-
-/* VECTOR */
-.division-hero.vector {
-  background-image: linear-gradient(rgba(110,123,133,0.4), rgba(110,123,133,0.4)),
-    url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1950&q=80');
-}
-
-/* ASTRA */
-.division-hero.astra {
-  background-image: linear-gradient(rgba(90,62,122,0.4), rgba(90,62,122,0.4)),
-    url('https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1950&q=80');
-}
-
-/* NOVA */
-.division-hero.nova {
-  background-image: linear-gradient(rgba(216,154,58,0.4), rgba(216,154,58,0.4)),
-    url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1950&q=80');
-}
-
-/* GUARDIAN QUADRANT */
-.division-hero.guardian {
-  background-image: linear-gradient(rgba(26,26,26,0.4), rgba(26,26,26,0.4)),
-    url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1950&q=80');
-}
-
-/* -------------------------------------- */
-/* NAVIGATION BAR                         */
-/* -------------------------------------- */
-
-.ross-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: var(--space-md) var(--space-lg);
-  border-bottom: 1px solid var(--ross-sandline);
-  background: #fff;
-  position: sticky;
-  top: 0;
-  z-index: 999;
-}
-
-.ross-nav-logo {
-  font-size: 1.4rem;
-  letter-spacing: 0.18em;
-  color: var(--ross-gold);
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-.ross-nav-links {
-  list-style: none;
-  display: flex;
-  gap: var(--space-lg);
-  margin: 0;
-  padding: 0;
-}
-
-.ross-nav-links li a {
-  text-decoration: none;
-  color: var(--ross-charcoal);
-  font-size: 0.95rem;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  transition: color 0.2s ease;
-}
-
-.ross-nav-links li a:hover {
-  color: var(--ross-gold);
-
-    <li><a href="visual.html">Visual Concepts</a></li>
-}
-
-/* -------------------------------------- */
-/* HERO BANNER                            */
-/* -------------------------------------- */
-
-.ross-banner {
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.85),
-      rgba(255, 255, 255, 0.85)
-    ),
-    url('https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=1950&q=80');
-  background-size: cover;
-  background-position: center;
-  padding: var(--space-xxl) var(--space-md);
-  text-align: center;
-  border-bottom: 1px solid var(--ross-sandline);
-}
-
-.ross-banner-inner {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.ross-banner-logo {
-  font-size: 3.2rem;
-  letter-spacing: 0.22em;
-  color: var(--ross-gold);
-  margin: 0;
-  text-transform: uppercase;
-}
-
-.ross-banner-motto {
-  font-size: 0.9rem;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  margin-top: var(--space-xs);
-  padding: var(--space-xs) var(--space-sm);
-  border-top: 1px solid var(--ross-gold);
-  border-bottom: 1px solid var(--ross-gold);
-  display: inline-block;
-}
-
-.ross-banner-title {
-  margin-top: var(--space-md);
-  font-size: 1.6rem;
-  letter-spacing: 0.08em;
-  color: var(--ross-charcoal);
-}
-
-.ross-banner-subtitle {
-  margin-top: var(--space-xs);
-  font-size: 1.05rem;
-  opacity: 0.8;
-  letter-spacing: 0.04em;
-}
-
-/* -------------------------------------- */
-/* PHILOSOPHY                             */
-/* -------------------------------------- */
-
-.ross-philosophy {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: var(--space-xl) var(--space-md);
-}
-
-.ross-philosophy h2 {
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  color: var(--ross-gold);
-  text-align: center;
-  margin-bottom: var(--space-lg);
-}
-
-.ross-philosophy-intro {
-  font-size: 1.1rem;
-  text-align: center;
-  max-width: 700px;
-  margin: 0 auto var(--space-xl) auto;
-  opacity: 0.9;
-}
-
-.ross-philosophy-block {
-  margin-bottom: var(--space-xl);
-  border-left: 3px solid var(--ross-gold);
-  padding-left: var(--space-md);
-}
-
-.ross-philosophy-block h3 {
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  font-size: 1rem;
-  margin-bottom: var(--space-xs);
-  color: var(--ross-charcoal);
-}
-
-.ross-philosophy-block p {
-  margin: 0;
-  opacity: 0.85;
-}
-
-/* -------------------------------------- */
-/* SERVICES                               */
-/* -------------------------------------- */
-
-.ross-services {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: var(--space-xl) var(--space-md);
-}
-
-.ross-services h2 {
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  color: var(--ross-gold);
-  text-align: center;
-  margin-bottom: var(--space-lg);
-}
-
-.ross-services-intro {
-  font-size: 1.1rem;
-  text-align: center;
-  max-width: 700px;
-  margin: 0 auto var(--space-xl) auto;
-  opacity: 0.9;
-}
-
-.ross-service-block {
-  margin-bottom: var(--space-xl);
-  border-left: 3px solid var(--ross-gold);
-  padding-left: var(--space-md);
-}
-
-.ross-service-block h3 {
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  font-size: 1rem;
-  margin-bottom: var(--space-xs);
-  color: var(--ross-charcoal);
-}
-
-.ross-service-block p {
-  margin: 0;
-  opacity: 0.85;
-}
-
-/* -------------------------------------- */
-/* DIVISIONS                              */
-/* -------------------------------------- */
-
-.ross-divisions {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: var(--space-xl) var(--space-md);
-}
-
-.ross-divisions h2 {
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  color: var(--ross-gold);
-  text-align: center;
-  margin-bottom: var(--space-lg);
-}
-
-.ross-divisions-intro {
-  font-size: 1.1rem;
-  text-align: center;
-  max-width: 700px;
-  margin: 0 auto var(--space-xl) auto;
-  opacity: 0.9;
-}
-
-.ross-division-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: var(--space-md);
-}
-
-.ross-division-card {
-  border: 1px solid var(--ross-sandline);
-  padding: var(--space-lg);
-  background: var(--ross-parchment);
-  transition: transform 0.2s ease, border-color 0.2s ease;
-}
-
-.ross-division-card:hover {
-  transform: translateY(-4px);
-  border-color: var(--ross-gold);
-}
-
-.ross-division-card h3 {
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  font-size: 1rem;
-  margin-bottom: var(--space-xs);
-  color: var(--ross-charcoal);
-}
-
-.ross-division-card p {
-  margin: 0;
-  opacity: 0.85;
-  font-size: 0.9rem;
-}
-
-/* -------------------------------------- */
-/* FOOTER                                 */
-/* -------------------------------------- */
-
-.ross-footer {
-  background: var(--ross-stone);
-  border-top: 1px solid var(--ross-sandline);
-  padding: var(--space-xl) var(--space-md) var(--space-md) var(--space-md);
-  margin-top: var(--space-xl);
-}
-
-.ross-footer-inner {
-  max-width: 960px;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-lg);
-  justify-content: space-between;
-}
-
-.ross-footer-column h4 {
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: var(--ross-gold);
-  margin-bottom: var(--space-xs);
-  font-size: 0.95rem;
-}
-
-.ross-footer-column p {
-  margin: 0;
-  opacity: 0.85;
-  font-size: 0.9rem;
-}
-
-.ross-footer-column ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.ross-footer-column ul li {
-  margin-bottom: var(--space-xs);
-}
-
-.ross-footer-column ul li a {
-  text-decoration: none;
-  color: var(--ross-charcoal);
-  font-size: 0.9rem;
-  transition: color 0.2s ease;
-}
-
-.ross-footer-column ul li a:hover {
-  color: var(--ross-gold);
-}
-
-.ross-footer-bottom {
-  text-align: center;
-  margin-top: var(--space-lg);
-  padding-top: var(--space-sm);
-  border-top: 1px solid var(--ross-sandline);
-}
-
-.ross-footer-bottom p {
-  margin: 0;
-  font-size: 0.85rem;
-  opacity: 0.75;
-}
-
-
-.ross-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  border-bottom: 1px solid #d8c7a0;
-  background: #fff;
-  position: sticky;
-  top: 0;
-  z-index: 999;
-}
-
-.ross-nav-logo {
-  font-size: 1.4rem;
-  letter-spacing: 0.18em;
-  color: #b89a5a;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-.ross-nav-links {
-  list-style: none;
-  display: flex;
-  gap: 2rem;
-  margin: 0;
-  padding: 0;
-}
-
-.ross-nav-links li a {
-  text-decoration: none;
-  color: #333;
-  font-size: 0.95rem;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  transition: color 0.2s ease;
-}
-
-.ross-nav-links li a:hover {
-  color: #b89a5a;
-}
-.ross-footer {
-  background: #f8f5ef;
-  border-top: 1px solid #d8c7a0;
-  padding: 3rem 1.5rem 1.5rem 1.5rem;
-  margin-top: 3rem;
-}
-
-.ross-footer-inner {
-  max-width: 960px;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: space-between;
-}
-
-.ross-footer-column h4 {
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: #b89a5a;
-  margin-bottom: 0.75rem;
-  font-size: 0.95rem;
-}
-
-.ross-footer-column p {
-  margin: 0;
-  opacity: 0.85;
-  font-size: 0.9rem;
-}
-
-.ross-footer-column ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.ross-footer-column ul li {
-  margin-bottom: 0.4rem;
-}
-
-.ross-footer-column ul li a {
-  text-decoration: none;
-  color: #333;
-  font-size: 0.9rem;
-  transition: color 0.2s ease;
-}
-
-.ross-footer-column ul li a:hover {
-  color: #b89a5a;
-}
-
-.ross-footer-bottom {
-  text-align: center;
-  margin-top: 2rem;
-  padding-top: 1rem;
-  border-top: 1px solid #d8c7a0;
-}
-
-.ross-footer-bottom p {
-  margin: 0;
-  font-size: 0.85rem;
-  opacity: 0.75;
-}
-.ross-divisions {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 3rem 1.5rem;
-}
-
-.ross-divisions h2 {
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  color: #b89a5a;
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.ross-divisions-intro {
-  font-size: 1.1rem;
-  text-align: center;
-  max-width: 700px;
-  margin: 0 auto 3rem auto;
-  opacity: 0.9;
-}
-
-.ross-division-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.5rem;
-}
-
-.ross-division-card {
-  border: 1px solid #e6dcc7;
-  padding: 1.5rem;
-  background: #faf8f4;
-  transition: transform 0.2s ease, border-color 0.2s ease;
-}
-
-.ross-division-card:hover {
-  transform: translateY(-4px);
-  border-color: #b89a5a;
-}
-
-.ross-division-card h3 {
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  font-size: 1rem;
-  margin-bottom: 0.5rem;
-  color: #333;
-}
-
-.ross-division-card p {
-  margin: 0;
-  opacity: 0.85;
-  font-size: 0.9rem;
-}
-:root {
-  /* COLOURS */
-  --ross-gold: #b89a5a;
-  --ross-charcoal: #333333;
-  --ross-soft-black: #111111;
-
-  --ross-stone: #f8f5ef;
-  --ross-parchment: #faf8f4;
-  --ross-sandline: #e6dcc7;
-
-  --ross-grey: #cccccc;
-  --ross-deep-grey: #555555;
-
-  /* SPACING */
-  --space-xxs: 0.25rem;
-  --space-xs: 0.5rem;
-  --space-sm: 1rem;
-  --space-md: 1.5rem;
-  --space-lg: 2rem;
-  --space-xl: 3rem;
-  --space-xxl: 4rem;
-}
-/* -------------------------------------- */
-/* TYPOGRAPHY — Ross House System         */
-/* -------------------------------------- */
-
-:root {
-  --accent-visual: #C46A3B;
-  --accent-media: #3A4F8F;
-  --accent-marketing: #8C2F39;
-  --accent-design: #4A5E7A;
-  --accent-clothing: #6B7A3C;
-  --accent-game: #2A8C82;
-  --accent-story: #8A5A3B;
-  --accent-sound: #A67C52;
-  --accent-experience: #7A5C9E;
-  --accent-future: #D46A2E;
-  --accent-mentoring: #9BAF88;
-  --accent-collab: #3F63B5;
-  --accent-education: #3E6B4F;
-  --accent-wellbeing: #C98A9A;
-  --accent-vector: #6E7B85;
-  --accent-astra: #5A3E7A;
-  --accent-nova: #D89A3A;
-  --accent-guardian: #1A1A1A;
-/* FONT SIZES */
-  --font-xxs: 0.75rem;
-  --font-xs: 0.85rem;
-  --font-sm: 1rem;
-  --font-md: 1.2rem;
-  --font-lg: 1.6rem;
-  --font-xl: 2.2rem;
-  --font-xxl: 3rem;
-/* LINE HEIGHTS */
-  --line-tight: 1.2;
-  --line-normal: 1.5;
-  --line-loose: 1.7;
-/* LETTER SPACING */
-  --track-tight: -0.01em;
-  --track-normal: 0.02em;
-  --track-wide: 0.08em;
-  --track-wider: 0.12em;
-/* Accent borders for each division card */
-.ross-division-card.visual { border-left: 4px solid var(--accent-visual); }
-.ross-division-card.media { border-left: 4px solid var(--accent-media); }
-.ross-division-card.marketing { border-left: 4px solid var(--accent-marketing); }
-.ross-division-card.design { border-left: 4px solid var(--accent-design); }
-.ross-division-card.clothing { border-left: 4px solid var(--accent-clothing); }
-.ross-division-card.game { border-left: 4px solid var(--accent-game); }
-.ross-division-card.story { border-left: 4px solid var(--accent-story); }
-.ross-division-card.sound { border-left: 4px solid var(--accent-sound); }
-.ross-division-card.experience { border-left: 4px solid var(--accent-experience); }
-.ross-division-card.future { border-left: 4px solid var(--accent-future); }
-.ross-division-card.mentoring { border-left: 4px solid var(--accent-mentoring); }
-.ross-division-card.collab { border-left: 4px solid var(--accent-collab); }
-.ross-division-card.education { border-left: 4px solid var(--accent-education); }
-.ross-division-card.wellbeing { border-left: 4px solid var(--accent-wellbeing); }
-.ross-division-card.vector { border-left: 4px solid var(--accent-vector); }
-.ross-division-card.astra { border-left: 4px solid var(--accent-astra); }
-.ross-division-card.nova { border-left: 4px solid var(--accent-nova); }
-.ross-division-card.guardian { border-left: 4px solid var(--accent-guardian); }
-
-/* Hover refinement */
-.ross-division-card.visual:hover { border-color: var(--accent-visual); }
-.ross-division-card.media:hover { border-color: var(--accent-media); }
-/* ...repeat for all accents... */
-
-}
-
-/* -------------------------------------- */
-/* GLOBAL TEXT                            */
-/* -------------------------------------- */
-
-body {
-  font-size: var(--font-sm);
-  line-height: var(--line-normal);
-  letter-spacing: var(--track-normal);
-  color: var(--ross-charcoal);
-}
-
-/* -------------------------------------- */
-/* HEADINGS                               */
-/* -------------------------------------- */
-
-h1, h2, h3, h4 {
-  font-weight: 600;
-  margin: 0 0 var(--space-sm) 0;
-  color: var(--ross-charcoal);
-}
-
-h1 {
-  font-size: var(--font-xxl);
-  letter-spacing: var(--track-wider);
-  text-transform: uppercase;
-}
-
-h2 {
-  font-size: var(--font-xl);
-  letter-spacing: var(--track-wider);
-  text-transform: uppercase;
-}
-
-h3 {
-  font-size: var(--font-md);
-  letter-spacing: var(--track-wide);
-  text-transform: uppercase;
-}
-
-h4 {
-  font-size: var(--font-sm);
-  letter-spacing: var(--track-wide);
-  text-transform: uppercase;
-}
-
-/* -------------------------------------- */
-/* PARAGRAPHS                             */
-/* -------------------------------------- */
-
-p {
-  margin: 0 0 var(--space-sm) 0;
-  font-size: var(--font-sm);
-  line-height: var(--line-loose);
-  opacity: 0.9;
-}
-
-/* -------------------------------------- */
-/* SMALL TEXT                             */
-/* -------------------------------------- */
-
-.small-text {
-  font-size: var(--font-xs);
-  opacity: 0.75;
-}
-
-/* -------------------------------------- */
-/* GOLD ACCENT TEXT                       */
-/* -------------------------------------- */
-
-.text-gold {
-  color: var(--ross-gold);
-}
-
-/* -------------------------------------- */
-/* CENTERED TEXT                          */
-/* -------------------------------------- */
-
-.text-center {
-  text-align: center;
-}
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ross House — Creative Dynasty</title>
+  <link rel="stylesheet" href="style.css">
 </head>
- <style>
-  /* /* ------------------------------ */
-/* GLOBAL LAYOUT & TYPOGRAPHY     */
-/* ------------------------------ */
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "Gill Sans", "Segoe UI", system-ui, sans-serif;
-  color: #333;
-  line-height: 1.6;
-  background: #fff;
-}
-
-.ross-home {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 2rem 1.5rem;
-}
-<section id="org" class="ross-divisions">
-  <h2>Divisions</h2>
-
-  <p class="ross-divisions-intro">
-    The Ross Conceptual Studio is structured into specialised divisions, each one
-    dedicated to a distinct creative or operational discipline. Together, they form
-    a unified ecosystem of craft, clarity, and innovation.
-  </p>
-
-  <div class="ross-division-grid">
-
-    <div class="ross-division-card">
-      <h3>Visual Concepts</h3>
-      <section class="division-hero visual">
-  <div class="division-hero-inner">
-    <h1>Visual Concepts</h1>
-      <p>Image-making, illustration, hybrid animation, and visual world-building.</p>
-    </div>
-,/section>
-
-    <div class="ross-division-card">
-      <h3>Media Concepts</h3>
-      <section class="division-hero visual">
-  <div class="division-hero-inner">
-      <h1>Media Concepts</h1>
-      <p>Film, motion, hybrid formats, and cross-platform storytelling.</p>
-    </div>
-
-    <div class="ross-division-card">
-      <h3>Marketing Concepts</h3>
-      <section class="division-hero visual">
-  <div class="division-hero-inner">
-    <h1>Marketing Concepts</h1>
-      <p>Campaign architecture, brand messaging, and strategic communication.</p>
-    </div>
-
-    <div class="ross-division-card">
-      <h3>Design Concepts</h3>
-      <section class="division-hero visual">
-  <div class="division-hero-inner">
-    <h1>Design Concepts</h1>
-      <p>Graphic systems, CRM geometry, and structured creative frameworks.</p>
-    </div>
-
-    <div class="ross-division-card">
-      <h3>Clothing Concepts</h3>
-      <section class="division-hero visual">
-  <div class="division-hero-inner">
-    <h1>Clothing Concepts</h1>
-      <p>Textile direction, silhouette development, and heritage-driven apparel.</p>
-    </div>
-      
-    <div class="ross-division-card">
-      <h3>Game Concepts</h3>
-      <section class="division-hero visual">
-  <div class="division-hero-inner">
-    <h1>Game Concepts</h1>
-      <p>Character systems, mechanics, and narrative-driven interactive design.</p>
-    </div>
-
-    <div class="ross-division-card">
-      <h3>Story Concepts</h3>
-      <section class="division-hero visual">
-  <div class="division-hero-inner">
-    <h1>Story Concepts</h1>
-      <p>Mythos development, emotional DNA, and narrative architecture.</p>
-    </div>
-
-    <div class="ross-division-card">
-      <h3>Sound & Music Concepts</h3>
-      <section class="division-hero visual">
-  <div class="division-hero-inner">
-    <h1>Music Concepts</h1>
-      <p>Emotional scoring, sonic identity, and music-driven creative direction.</p>
-    </div>
-
-    <div class="ross-division-card">
-      <h3>Experience Concepts</h3>
-      <section class="division-hero visual">
-  <div class="division-hero-inner">
-    <h1>Experience Concepts</h1>
-      <p>Immersive events, installations, and ceremonial creative experiences.</p>
-    </div>
-
-    <div class="ross-division-card">
-      <h3>Innovation & Futureform</h3>
-      <section class="division-hero visual">
-  <div class="division-hero-inner">
-    <h1>Innovation & Futureform Concepts</h1>
-      <p>Emerging tech, hybrid media, and conceptual R&D for new creative frontiers.</p>
-    </div>
-
-    <div class="ross-division-card">
-      <h3>Mentoring</h3>
-      <section class="division-hero visual">
-  <div class="division-hero-inner">
-    <h1>Mentoring Concepts</h1>
-      <p>Guidance, development, and creative growth for emerging talent.</p>
-    </div>
-
-    <div class="ross-division-card">
-      <h3>Collaboration</h3>
-      <section class="division-hero visual">
-  <div class="division-hero-inner">
-    <h1>Collaboration Concepts</h1>
-      <p>Partnerships, co-creation, and interdisciplinary studio work.</p>
-    </div>
-
-    <div class="ross-division-card">
-      <h3>Education</h3>
-      <section class="division-hero visual">
-  <div class="division-hero-inner">
-    <h1>Educational Concepts</h1>
-      <p>Workshops, learning frameworks, and conceptual training.</p>
-    </div>
-
-    <div class="ross-division-card">
-      <h3>Wellbeing</h3>
-      <section class="division-hero visual">
-  <div class="division-hero-inner">
-    <h1>Wellbeing Philosophy</h1>
-      <p>Emotional support, creative health, and studio culture.</p>
-    </div>
-
-    <div class="ross-division-card">
-      <h3>VECTOR — Technical Archive</h3>
-      <section class="division-hero visual">
-  <div class="division-hero-inner">
-    <h1>Trechnical Archive</h1>
-      <p>Systems, documentation, and technical governance.</p>
-    </div>
-
-    <div class="ross-division-card">
-      <h3>ASTRA — Governance</h3>
-      <section class="division-hero visual">
-  <div class="division-hero-inner">
-    <h1>Govewrnance</h1>
-      <p>Standards, ethics, and operational clarity.</p>
-    </div>
-
-    <div class="ross-division-card">
-      <h3>NOVA — Strategic Development</h3>
-      <section class="division-hero visual">
-  <div class="division-hero-inner">
-    <h1>SAtrategic Development</h1>
-      <p>Long-term planning, growth, and structural evolution.</p>
-    </div>
-
-    <div class="ross-division-card">
-      <h3>The Guardian Quadrant</h3>
-      <section class="division-hero visual">
-  <div class="division-hero-inner">
-    <h1>The Guardian Quadrant</h1>
-      <p>Oversight, protection, and studio integrity.</p>
-    </div>
-
-  </div>
-</section>
-
-/* ------------------------------ */
-/* NAVIGATION BAR                 */
-/* ------------------------------ */
-
-.ross-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  border-bottom: 1px solid #d8c7a0;
-  background: #fff;
-  position: sticky;
-  top: 0;
-  z-index: 999;
-}
-
-.ross-nav-logo {
-  font-size: 1.4rem;
-  letter-spacing: 0.18em;
-  color: #b89a5a;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-.ross-nav-links {
-  list-style: none;
-  display: flex;
-  gap: 2rem;
-  margin: 0;
-  padding: 0;
-}
-
-.ross-nav-links li a {
-  text-decoration: none;
-  color: #333;
-  font-size: 0.95rem;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  transition: color 0.2s ease;
-}
-
-.ross-nav-links li a:hover {
-  color: #b89a5a;
-}
-
-/* ------------------------------ */
-/* HERO BANNER                    */
-/* ------------------------------ */
-
-.ross-banner {
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.85),
-      rgba(255, 255, 255, 0.85)
-    ),
-    url('https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=1950&q=80');
-  background-size: cover;
-  background-position: center;
-  padding: 6rem 1.5rem;
-  text-align: center;
-  border-bottom: 1px solid #d8c7a0;
-}
-
-.ross-banner-inner {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.ross-banner-logo {
-  font-size: 3.2rem;
-  letter-spacing: 0.22em;
-  color: #b89a5a;
-  margin: 0;
-  text-transform: uppercase;
-}
-
-.ross-banner-motto {
-  font-size: 0.9rem;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  margin-top: 0.5rem;
-  padding: 0.35rem 0.75rem;
-  border-top: 1px solid #b89a5a;
-  border-bottom: 1px solid #b89a5a;
-  display: inline-block;
-}
-
-.ross-banner-title {
-  margin-top: 1.5rem;
-  font-size: 1.6rem;
-  letter-spacing: 0.08em;
-  color: #333;
-}
-
-.ross-banner-subtitle {
-  margin-top: 0.5rem;
-  font-size: 1.05rem;
-  opacity: 0.8;
-  letter-spacing: 0.04em;
-}
-
-/* ------------------------------ */
-/* SECTION DIVIDERS               */
-/* ------------------------------ */
-
-.ross-divider {
-  height: 6px;
-  background: linear-gradient(to right, #b89a5a 0%, transparent 100%);
-  margin: 2.5rem 0;
-}
-
-/* ------------------------------ */
-/* SECTION HEADERS                */
-/* ------------------------------ */
-
-.ross-about h2,
-.ross-org h2,
-.ross-contact h2 {
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  margin-bottom: 1rem;
-  color: #b89a5a;
-}
-
-.ross-org h3 {
-  margin-top: 1.5rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  font-size: 1rem;
-  color: #555;
-}
-
-/* ------------------------------ */
-/* ORGANISATIONAL MAP LISTS       */
-/* ------------------------------ */
-
-.ross-org ul {
-  list-style: none;
-  padding-left: 0;
-  margin-top: 0.5rem;
-}
-
-.ross-org li {
-  margin-bottom: 0.4rem;
-}
-
-/* ------------------------------ */
-/* CONTACT BLOCK                  */
-/* ------------------------------ */
-
-.ross-contact strong {
-  color: #b89a5a;
-}
-/* -------------------------------------- */
-/* MOBILE RESPONSIVE — Ross House         */
-/* -------------------------------------- */
-
-@media (max-width: 768px) {
-
-  /* NAVIGATION */
-  .ross-nav {
-    flex-direction: column;
-    gap: var(--space-sm);
-    padding: var(--space-sm) var(--space-md);
-  }
-
-  .ross-nav-links {
-    gap: var(--space-sm);
-  }
-
-  /* BANNER */
-  .ross-banner {
-    padding: var(--space-xl) var(--space-sm);
-  }
-
-  .ross-banner-logo {
-    font-size: 2.4rem;
-  }
-
-  .ross-banner-title {
-    font-size: 1.3rem;
-  }
-
-  .ross-banner-subtitle {
-    font-size: 0.95rem;
-  }
-
-  /* GLOBAL SECTIONS */
-  .ross-home,
-  .ross-philosophy,
-  .ross-services,
-  .ross-divisions {
-    padding: var(--space-lg) var(--space-sm);
-  }
-
-  /* PHILOSOPHY & SERVICES BLOCKS */
-  .ross-philosophy-block,
-  .ross-service-block {
-    border-left-width: 2px;
-    padding-left: var(--space-sm);
-    margin-bottom: var(--space-lg);
-  }
-
-  /* DIVISIONS GRID */
-  .ross-division-grid {
-    grid-template-columns: 1fr;
-    gap: var(--space-sm);
-  }
-
-  .ross-division-card {
-    padding: var(--space-md);
-  }
-
-  /* FOOTER */
-  .ross-footer-inner {
-    flex-direction: column;
-    gap: var(--space-md);
-  }
-
-  .ross-footer {
-    padding: var(--space-lg) var(--space-sm);
-  }
-
-  .ross-footer-bottom {
-    margin-top: var(--space-md);
-  }
-}
-
-@media (max-width: 480px) {
-
-  /* EVEN SMALLER DEVICES */
-  .ross-banner-logo {
-    font-size: 2rem;
-  }
-
-  .ross-banner-title {
-    font-size: 1.1rem;
-  }
-
-  .ross-banner-subtitle {
-    font-size: 0.9rem;
-  }
-
-  .ross-nav-logo {
-    font-size: 1.1rem;
-  }
-
-  .ross-nav-links li a {
-    font-size: 0.8rem;
-  }
-}
-
-</style>
-
 
 <body>
 
-  <nav class="ross-nav">
-    ...nav code...
-  </nav>
+<!-- GLOBAL NAVIGATION -->
+<nav class="ross-nav">
+  <div class="ross-nav-logo">ROSS HOUSE</div>
 
-  <section class="ross-home">
-    ...homepage content...
-  </section>
-
-</body>
-
-    <nav class="ross-nav">
-  <div class="ross-nav-logo">ROSS</div>
   <ul class="ross-nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#org">Divisions</a></li>
+    <li><a href="index.html" class="active">Home</a></li>
     <li><a href="#philosophy">Philosophy</a></li>
+    <li><a href="#divisions">Divisions</a></li>
     <li><a href="#services">Services</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="site-map.html">Site Map</a></li>
+    <li><a href="contact.html">Contact</a></li>
   </ul>
 </nav>
-    <section class="ross-banner">
-  <div class="ross-banner-inner">
-    <h1 class="ross-banner-logo">ROSS</h1>
-    <p class="ross-banner-motto">SPEM SUCCESSUS ALIT</p>
-    <h2 class="ross-banner-title">The Ross Conceptual Studio</h2>
-    <p class="ross-banner-subtitle">A Creative House of Lineage, Mythos & Modern Elegance</p>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-inner">
+    <h1>Ross House</h1>
+    <p>A creative dynasty of lineage, mythology, and emotionally intelligent design.</p>
+    <div class="hero-actions">
+      <a href="#divisions" class="cta-button">Explore Divisions</a>
+      <a href="contact.html" class="secondary-button">Start a Project</a>
+    </div>
+  </div>
+</header>
+
+<!-- PHILOSOPHY -->
+<section id="philosophy" class="section philosophy">
+  <div class="section-inner">
+    <h2>Philosophy</h2>
+    <p>
+      Ross House is a living creative dynasty — a place where lineage, mythology,
+      music, and design converge. Every division is a room in the same house,
+      every project a new chapter in the same story. We treat structure as care,
+      emotion as architecture, and creativity as a long‑term inheritance.
+    </p>
   </div>
 </section>
-<!-- ROSS CONCEPTUAL STUDIO HOMEPAGE -->
-  <section class="ross-home">
-    ...PHASE I BLOCK GOES HERE...
-  </section>
 
-</body>
-    <body>
+<!-- DIVISIONS OVERVIEW -->
+<section id="divisions" class="section divisions-overview">
+  <div class="section-inner">
+    <h2>Divisions of the Ross House</h2>
+    <p class="section-intro">
+      Eighteen interconnected divisions form the Ross House — each with its own
+      focus, all sharing the same emotional and mythic DNA.
+    </p>
 
-  <nav class="ross-nav">
-    ...nav...
-  </nav>
+    <div class="division-groups">
 
-  <section class="ross-banner">
-    ...banner...
-  </section>
+      <!-- CORE CREATIVE -->
+      <div class="division-group">
+        <h3>Core Creative</h3>
+        <ul>
+          <li><a href="visual.html">Visual Concepts</a> — imagery, composition, and visual mythology.</li>
+          <li><a href="media.html">Media Concepts</a> — motion, editing, and hybrid storytelling.</li>
+          <li><a href="marketing.html">Marketing Concepts</a> — campaigns, positioning, and narrative strategy.</li>
+          <li><a href="design.html">Design Concepts</a> — systems, layouts, and brand architecture.</li>
+        </ul>
+      </div>
 
-  <section class="ross-home">
-    ...homepage content...
-  </section>
+      <!-- WORLD & FORM -->
+      <div class="division-group">
+        <h3>World & Form</h3>
+        <ul>
+          <li><a href="clothing.html">Clothing Concepts</a> — textile stories and wearable mythology.</li>
+          <li><a href="game.html">Game Concepts</a> — mechanics, rules, and interactive worlds.</li>
+          <li><a href="story.html">Story Concepts</a> — mythology, character arcs, and narrative DNA.</li>
+          <li><a href="sound.html">Sound & Music</a> — rhythm, voltage, and sonic identity.</li>
+          <li><a href="experience.html">Experience Concepts</a> — atmosphere, immersion, and ritual.</li>
+        </ul>
+      </div>
 
-  <section id="philosophy" class="ross-philosophy">
-    ...philosophy content...
-  </section>
-<!-- 5. SERVICES SECTION -->
-  <section id="services" class="ross-services">
-    ...services content...
-  </section>
+      <!-- FUTURE & CARE -->
+      <div class="division-group">
+        <h3>Future & Care</h3>
+        <ul>
+          <li><a href="future.html">Innovation & Futureform</a> — speculative systems and next‑era mythology.</li>
+          <li><a href="mentoring.html">Mentoring</a> — guidance, encouragement, and creative confidence.</li>
+          <li><a href="collab.html">Collaboration</a> — partnership and shared world‑building.</li>
+          <li><a href="education.html">Education Concepts</a> — learning frameworks and creative development.</li>
+          <li><a href="wellbeing.html">Wellbeing Concepts</a> — emotional grounding and restorative practice.</li>
+        </ul>
+      </div>
 
-<footer>
-  <footer class="ross-footer">
-  <div class="ross-footer-inner">
+      <!-- COSMIC & STRUCTURAL -->
+      <div class="division-group">
+        <h3>Cosmic & Structural</h3>
+        <ul>
+          <li><a href="vector.html">VECTOR</a> — precision, geometry, and technical visual systems.</li>
+          <li><a href="astra.html">ASTRA</a> — cosmic symbolism and mythic cosmology.</li>
+          <li><a href="nova.html">NOVA</a> — transformation, ignition, and creative rebirth.</li>
+          <li><a href="guardian.html">Guardian Quadrant</a> — governance, ethics, and stewardship.</li>
+        </ul>
+      </div>
 
-    <div class="ross-footer-column">
-      <h4>Ross Conceptual Studio</h4>
-      <p>
-        30 Darley Street<br>
-        Manchester, M32 8LJ<br>
-        United Kingdom
-      </p>
     </div>
-     <div class="ross-footer-column">
-      <h4>Contact</h4>
-      <p>
-        Tel: +44 (0) 7824 790 870<br>
-        Email: therossconsultancy@gmail.com
-      </p>
-    </div>
-
-    <div class="ross-footer-column">
-      <h4>Navigation</h4>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#philosophy">Philosophy</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#org">Divisions</a></li>
-      </ul>
-    </div>
-
   </div>
+</section>
 
-  <div class="ross-footer-bottom">
-    <p>© Ross House — All Rights Reserved</p>
+<!-- SERVICES SUMMARY -->
+<section id="services" class="section services-summary">
+  <div class="section-inner">
+    <h2>How We Work</h2>
+    <p class="section-intro">
+      Whether you need a single artefact or a full mythic ecosystem, Ross House
+      can engage at multiple levels.
+    </p>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>Campaigns & Worlds</h3>
+        <p>End‑to‑end creative direction across story, sound, visual, and experience.</p>
+      </div>
+      <div class="service-card">
+        <h3>Systems & Frameworks</h3>
+        <p>Brand bibles, visual systems, governance models, and operational architecture.</p>
+      </div>
+      <div class="service-card">
+        <h3>Mentoring & Education</h3>
+        <p>Workshops, mentoring, and learning structures rooted in lineage and care.</p>
+      </div>
+      <div class="service-card">
+        <h3>Collaboration & Experimentation</h3>
+        <p>Cross‑disciplinary projects, speculative labs, and futureform prototypes.</p>
+      </div>
+    </div>
   </div>
-</footer> 
-  </footer>
-</footer>
+</section>
+
+<!-- CALL TO ACTION -->
+<section class="section cta-main">
+  <div class="section-inner cta-main-inner">
+    <h2>Begin a New Chapter</h2>
+    <p>
+      If you feel a project, a world, or a character stirring — the Ross House
+      can give it structure, story, and emotional voltage.
+    </p>
+    <div class="hero-actions">
+      <a href="contact.html" class="cta-button">Contact the Studio</a>
+      <a href="site-map.html" class="secondary-button">View Full Site Map</a>
+    </div>
+  </div>
+</section>
+
 </body>
 </html>
+
