@@ -1,0 +1,104 @@
+/* HERO */
+.cb-hero {
+  text-align: center;
+  padding: 140px 20px 80px;
+  position: relative;
+}
+
+.cb-hero h1 {
+  font-size: 3rem;
+  color: #b08a3c;
+}
+
+.cb-tagline {
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+/* Crest watermark */
+.cb-crest {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 520px;
+  height: 520px;
+  background: url('crest.png') no-repeat center/contain;
+  opacity: 0.05;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+/* MAIN */
+.cb-main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px 80px;
+}
+
+/* SECTIONS */
+.cb-section {
+  margin: 50px 0;
+}
+
+.cb-section h2 {
+  color: #b08a3c;
+  margin-bottom: 16px;
+}
+
+.cb-section p {
+  line-height: 1.6;
+}
+
+/* LISTS */
+.cb-list li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* GRID */
+.cb-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.cb-card {
+  background: rgba(255,255,255,0.6);
+  padding: 18px 20px;
+  border-left: 4px solid #b08a3c;
+  border-radius: 4px;
+}
+
+/* GALLERY */
+.cb-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.cb-gallery-item {
+  background: rgba(255,255,255,0.4);
+  height: 200px;
+  border-radius: 4px;
+  border-left: 4px solid #b08a3c;
+}
+
+/* CTA */
+.cb-cta {
+  text-align: center;
+  margin-top: 60px;
+}
+
+/* FADE-IN */
+.hor-fade {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.8s ease;
+}
+
+.hor-fade.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
