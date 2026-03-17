@@ -1,0 +1,368 @@
+/* ---------------------------------------------------------
+   GLOBAL PAGE STYLE — PARCHMENT MANUSCRIPT
+--------------------------------------------------------- */
+
+.hor-main--pb {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 40px;
+  position: relative;
+  z-index: 2;
+}
+
+.hor-pb-hero {
+  text-align: center;
+  padding: 120px 40px 80px;
+  position: relative;
+}
+
+.hor-pb-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.hor-pb-subtitle {
+  font-size: 1.3rem;
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+
+.hor-pb-intro {
+  max-width: 700px;
+  margin: 0 auto 30px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.hor-pb-cta-row {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.hor-button {
+  background: #b08a3c;
+  color: white;
+  padding: 12px 22px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.hor-button:hover {
+  background: #c9a45a;
+}
+
+.hor-button--ghost {
+  background: transparent;
+  border: 2px solid #b08a3c;
+  color: #b08a3c;
+}
+
+.hor-button--ghost:hover {
+  background: rgba(176, 138, 60, 0.1);
+}
+
+/* ---------------------------------------------------------
+   TABLE OF CONTENTS GRID
+--------------------------------------------------------- */
+
+.hor-pb-toc {
+  margin-top: 40px;
+}
+
+.hor-pb-toc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.hor-pb-toc-item {
+  display: block;
+  padding: 18px 20px;
+  background: rgba(255, 255, 255, 0.4);
+  border-left: 4px solid #b08a3c;
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.hor-pb-toc-item:hover {
+  background: rgba(176, 138, 60, 0.15);
+  transform: translateX(4px);
+}
+
+/* ---------------------------------------------------------
+   SIDEBAR (Production Bible version)
+--------------------------------------------------------- */
+
+.hor-sidebar--pb .hor-sidebar-title {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #b08a3c;
+}
+
+.hor-sidebar--pb a {
+  padding: 10px 0;
+  display: block;
+  color: #333;
+  text-decoration: none;
+  border-left: 3px solid transparent;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.hor-sidebar--pb a:hover {
+  color: #b08a3c;
+}
+
+.hor-sidebar--pb a.active {
+  color: #b08a3c;
+  border-left-color: #b08a3c;
+  font-weight: 600;
+}
+
+/* ---------------------------------------------------------
+   CHAPTER SECTIONS
+--------------------------------------------------------- */
+
+.hor-pb-section {
+  margin: 80px 0;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.hor-pb-section h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #b08a3c;
+}
+
+.hor-pb-section h3 {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  opacity: 0.85;
+}
+
+.hor-pb-section h4 {
+  margin-top: 25px;
+  font-size: 1.2rem;
+  color: #444;
+}
+
+.hor-pb-section p,
+.hor-pb-section li {
+  font-size: 1.05rem;
+  line-height: 1.65;
+  margin-bottom: 12px;
+}
+
+/* ---------------------------------------------------------
+   FADE-IN ANIMATION (same as Brand Bible)
+--------------------------------------------------------- */
+
+.hor-fade {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.hor-fade.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ---------------------------------------------------------
+   BACK TO TOP BUTTON
+--------------------------------------------------------- */
+
+.hor-back-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  background: #b08a3c;
+  color: white;
+  padding: 12px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  opacity: 0.85;
+  transition: opacity 0.3s ease;
+}
+
+.hor-back-to-top:hover {
+  opacity: 1;
+}
+
+/* ---------------------------------------------------------
+   SCROLL OFFSET FOR ANCHORS
+--------------------------------------------------------- */
+
+:target {
+  scroll-margin-top: 120px;
+}
+/* ---------------------------------------------------------
+   GLOBAL PAGE STYLE — PARCHMENT MANUSCRIPT
+--------------------------------------------------------- */
+
+.hor-main--pb {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 40px;
+  position: relative;
+  z-index: 2;
+}
+
+/* Subtle parchment texture overlay */
+body.hor-parchment::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url('parchment-texture.jpg');
+  opacity: 0.25;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* ---------------------------------------------------------
+   HERO SECTION
+--------------------------------------------------------- */
+
+.hor-pb-hero {
+  text-align: center;
+  padding: 120px 40px 80px;
+  position: relative;
+}
+
+.hor-pb-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.hor-pb-subtitle {
+  font-size: 1.3rem;
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+
+.hor-pb-intro {
+  max-width: 700px;
+  margin: 0 auto 30px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.hor-pb-cta-row {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.hor-button {
+  background: #b08a3c;
+  color: white;
+  padding: 12px 22px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.hor-button:hover {
+  background: #c9a45a;
+}
+
+.hor-button--ghost {
+  background: transparent;
+  border: 2px solid #b08a3c;
+  color: #b08a3c;
+}
+
+.hor-button--ghost:hover {
+  background: rgba(176, 138, 60, 0.1);
+}
+
+/* ---------------------------------------------------------
+   TABLE OF CONTENTS GRID
+--------------------------------------------------------- */
+
+.hor-pb-toc {
+  margin-top: 40px;
+}
+
+.hor-pb-toc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.hor-pb-toc-item {
+  display: block;
+  padding: 18px 20px;
+  background: rgba(255, 255, 255, 0.4);
+  border-left: 4px solid #b08a3c;
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.hor-pb-toc-item:hover {
+  background: rgba(176, 138, 60, 0.15);
+  transform: translateX(4px);
+}
+
+/* ---------------------------------------------------------
+   SIDEBAR (Production Bible version)
+--------------------------------------------------------- */
+
+.hor-sidebar--pb .hor-sidebar-title {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #b08a3c;
+}
+
+.hor-sidebar--pb a {
+  padding: 10px 0;
+  display: block;
+  color: #333;
+  text-decoration: none;
+  border-left: 3px solid transparent;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.hor-sidebar--pb a:hover {
+  color: #b08a3c;
+}
+
+.hor-sidebar--pb a.active {
+  color: #b08a3c;
+  border-left-color: #b08a3c;
+  font-weight: 600;
+}
+
+/* ---------------------------------------------------------
+   CHAPTER SECTIONS
+--------------------------------------------------------- */
+
+.hor-pb-section {
+  margin: 80px 0;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  position: relative;
+}
+
+/* Chapter divider runes */
+.hor-pb-section::before {
+  content: "⟡";
+  font-size: 2rem;
+  color: rgba
