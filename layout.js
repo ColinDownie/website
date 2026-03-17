@@ -1,3 +1,10 @@
+/* PRELOADER */
+document.write(`
+  <div id="preloader">
+    <div class="crest-pulse"></div>
+  </div>
+`);
+
 /* Inject Header */
 document.write(`
   <nav class="ross-nav">
