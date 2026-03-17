@@ -2,10 +2,242 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>House of Ross – Production Bible</title>
+  <title>House of Ross – Production Bible Index</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="production-bible.css">
 </head>
+<body id="top" class="hor-body hor-parchment">
+
+<header class="hor-header">
+  <!-- Your global header -->
+</header>
+
+<button class="hor-sidebar-toggle">☰ Menu</button>
+
+<aside class="hor-sidebar">
+  <nav class="hor-sidebar-nav">
+    <h2 class="hor-sidebar-title">Production Bible</h2>
+    <a href="production-bible.html#prologue">Prologue</a>
+    <a href="production-bible.html#chapter-1">Chapter I – Production Philosophy</a>
+    <a href="production-bible.html#chapter-2">Chapter II – Cinematic Grammar</a>
+    <a href="production-bible.html#chapter-3">Chapter III – Hybrid Animation System</a>
+    <a href="production-bible.html#chapter-4">Chapter IV – Avatar Performance Rules</a>
+    <a href="production-bible.html#chapter-5">Chapter V – Mythic Integration Protocols</a>
+    <a href="production-bible.html#chapter-6">Chapter VI – Colour, Texture & Materiality</a>
+    <a href="production-bible.html#chapter-7">Chapter VII – Motion Architecture</a>
+    <a href="production-bible.html#chapter-8">Chapter VIII – Character Canon</a>
+    <a href="production-bible.html#chapter-9">Chapter IX – Visual Effects Language</a>
+    <a href="production-bible.html#chapter-10">Chapter X – Production Pipeline</a>
+    <a href="production-bible.html#chapter-11">Chapter XI – Division Responsibilities</a>
+    <a href="production-bible.html#chapter-12">Chapter XII – Governance & Quality Control</a>
+    <a href="production-bible.html#epilogue">Epilogue</a>
+  </nav>
+</aside>
+
+<main class="hor-main hor-main--pb">
+
+  <!-- HERO -->
+  <section class="hor-section hor-fade hor-pb-hero">
+    <h1>House of Ross Production Bible</h1>
+    <p class="hor-pb-subtitle">The Creative Constitution of the Ross Dynasty</p>
+    <p class="hor-pb-intro">
+      This index is your gateway into the full manuscript — a living codex that defines how stories move, breathe,
+      transform, and come alive within the House of Ross.
+    </p>
+
+    <div class="hor-pb-cta-row">
+      <a href="production-bible.html#prologue" class="hor-button">Enter the Manuscript</a>
+      <a href="#pb-index" class="hor-button hor-button--ghost">View Chapters</a>
+    </div>
+  </section>
+
+  <!-- INDEX GRID -->
+  <section id="pb-index" class="hor-section hor-fade hor-pb-toc">
+    <h2>Chapters</h2>
+
+    <div class="hor-pb-toc-grid">
+
+      <a href="production-bible.html#prologue" class="hor-pb-toc-item">
+        Prologue — Purpose of the Bible
+      </a>
+
+      <a href="production-bible.html#chapter-1" class="hor-pb-toc-item">
+        Chapter I — Production Philosophy
+      </a>
+
+      <a href="production-bible.html#chapter-2" class="hor-pb-toc-item">
+        Chapter II — Cinematic Grammar
+      </a>
+
+      <a href="production-bible.html#chapter-3" class="hor-pb-toc-item">
+        Chapter III — Hybrid Animation System
+      </a>
+
+      <a href="production-bible.html#chapter-4" class="hor-pb-toc-item">
+        Chapter IV — Avatar Performance Rules
+      </a>
+
+      <a href="production-bible.html#chapter-5" class="hor-pb-toc-item">
+        Chapter V — Mythic Integration Protocols
+      </a>
+
+      <a href="production-bible.html#chapter-6" class="hor-pb-toc-item">
+        Chapter VI — Colour, Texture & Materiality
+      </a>
+
+      <a href="production-bible.html#chapter-7" class="hor-pb-toc-item">
+        Chapter VII — Motion Architecture
+      </a>
+
+      <a href="production-bible.html#chapter-8" class="hor-pb-toc-item">
+        Chapter VIII — Character Canon
+      </a>
+
+      <a href="production-bible.html#chapter-9" class="hor-pb-toc-item">
+        Chapter IX — Visual Effects Language
+      </a>
+
+      <a href="production-bible.html#chapter-10" class="hor-pb-toc-item">
+        Chapter X — Production Pipeline
+      </a>
+
+      <a href="production-bible.html#chapter-11" class="hor-pb-toc-item">
+        Chapter XI — Division Responsibilities
+      </a>
+
+      <a href="production-bible.html#chapter-12" class="hor-pb-toc-item">
+        Chapter XII — Governance & Quality Control
+      </a>
+
+      <a href="production-bible.html#epilogue" class="hor-pb-toc-item">
+        Epilogue — A Living Artefact
+      </a>
+
+    </div>
+  </section>
+
+  <!-- BACK TO TOP -->
+  <a href="#top" class="hor-back-to-top">↑ Back to Top</a>
+
+</main>
+
+<footer class="hor-footer">
+  <!-- Your global footer -->
+</footer>
+
+<!-- JS (same as production-bible.html) -->
+<script>
+  document.querySelector(".hor-sidebar-toggle").addEventListener("click", () => {
+    document.querySelector(".hor-sidebar").classList.toggle("open");
+  });
+</script>
+
+<script>
+  const fadeEls = document.querySelectorAll(".hor-fade");
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add("visible"); });
+  }, { threshold: 0.2 });
+  fadeEls.forEach(el => obs.observe(el));
+</script>
+  
+  <!-- ---------------------------------------------------------
+     FADE‑IN ANIMATIONS
+--------------------------------------------------------- -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const fadeElements = document.querySelectorAll(".hor-fade");
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      }
+    });
+  }, { threshold: 0.2 });
+
+  fadeElements.forEach(el => observer.observe(el));
+});
+</script>
+
+
+<!-- ---------------------------------------------------------
+     ACTIVE SIDEBAR HIGHLIGHTING
+--------------------------------------------------------- -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const sections = document.querySelectorAll("section[id]");
+  const navLinks = document.querySelectorAll(".hor-sidebar-nav a");
+
+  function activateLink() {
+    let scrollPos = window.scrollY + 150;
+
+    sections.forEach(section => {
+      if (scrollPos >= section.offsetTop &&
+          scrollPos < section.offsetTop + section.offsetHeight) {
+
+        navLinks.forEach(link => link.classList.remove("active"));
+
+        const activeLink = document.querySelector(
+          `.hor-sidebar-nav a[href="#${section.id}"]`
+        );
+
+        if (activeLink) activeLink.classList.add("active");
+      }
+    });
+  }
+
+  window.addEventListener("scroll", activateLink);
+});
+</script>
+
+
+<!-- ---------------------------------------------------------
+     SIDEBAR TOGGLE (MOBILE)
+--------------------------------------------------------- -->
+<script>
+document.querySelector(".hor-sidebar-toggle").addEventListener("click", () => {
+  document.querySelector(".hor-sidebar").classList.toggle("open");
+});
+</script>
+
+
+<!-- ---------------------------------------------------------
+     SCROLL PROGRESS BAR
+--------------------------------------------------------- -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const progressBar = document.createElement("div");
+  progressBar.className = "hor-progress-bar";
+  document.body.appendChild(progressBar);
+
+  function updateProgress() {
+    const scrollTop = window.scrollY;
+    const docHeight = document.body.scrollHeight - window.innerHeight;
+    const progress = (scrollTop / docHeight) * 100;
+    progressBar.style.width = progress + "%";
+  }
+
+  window.addEventListener("scroll", updateProgress);
+});
+</script>
+
+
+<!-- ---------------------------------------------------------
+     CREST PARALLAX WATERMARK
+--------------------------------------------------------- -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const crest = document.createElement("div");
+  crest.className = "hor-crest-watermark";
+  document.body.appendChild(crest);
+
+  window.addEventListener("scroll", () => {
+    const offset = window.scrollY * 0.05;
+    crest.style.transform = `translate(-50%, calc(-50% + ${offset}px))`;
+  });
+});
+</script>
+
 
 <body id="top" class="hor-body hor-parchment">
 
