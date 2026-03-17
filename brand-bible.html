@@ -428,6 +428,48 @@
   </footer>
 
   <script>
+document.addEventListener("DOMContentLoaded", () => {
+  const sections = document.querySelectorAll("section[id]");
+  const navLinks = document.querySelectorAll(".hor-sidebar-nav a");
+
+  function activateLink() {
+    let scrollPos = window.scrollY + 150;
+
+    sections.forEach(section => {
+      if (scrollPos >= section.offsetTop && scrollPos < section.offsetTop + section.offsetHeight) {
+        navLinks.forEach(link => link.classList.remove("active"));
+        const activeLink = document.querySelector(`.hor-sidebar-nav a[href="#${section.id}"]`);
+        if (activeLink) activeLink.classList.add("active");
+      }
+    });
+  }
+
+  window.addEventListener("scroll", activateLink);
+});
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const fadeElements = document.querySelectorAll(".hor-fade");
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      }
+    });
+  }, { threshold: 0.2 });
+
+  fadeElements.forEach(el => observer.observe(el));
+});
+</script>
+<script>
+document.querySelector(".hor-sidebar-toggle").addEventListener("click", () => {
+  document.querySelector(".hor-sidebar").classList.toggle("open");
+});
+</script>
+
+
+  <script>
     // Simple year script
     document.getElementById('hor-year').textContent = new Date().getFullYear();
   </script>
