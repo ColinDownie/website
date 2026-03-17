@@ -88,4 +88,12 @@ document.write(`
       <p>© Ross House — A Creative Dynasty</p>
     </div>
   </footer>
+  /* PRELOADER LOGIC */
+window.addEventListener("load", () => {
+  const preloader = document.getElementById("preloader");
+  setTimeout(() => {
+    preloader.classList.add("fade-out");
+  }, 600); // slight delay for elegance
+});
+
 `);
