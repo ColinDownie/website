@@ -1,4 +1,9 @@
-:root {
+.division-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  padding: 60px 20px;
+}
   :root {
   --accent-visual: #8ecae6;
   --accent-media: #219ebc;
