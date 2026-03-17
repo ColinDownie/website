@@ -1,3 +1,71 @@
+/* HEADER */
+.ross-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: #111;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.ross-nav-logo a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+}
+
+.ross-nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.ross-nav-links a {
+  color: #ccc;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.ross-nav-links a:hover {
+  color: #fff;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background: #111;
+  padding: 15px 20px;
+  border: 1px solid #333;
+  top: 30px;
+  right: 0;
+  min-width: 220px;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 6px 0;
+  color: #ccc;
+}
+
+.dropdown-menu a:hover {
+  color: #fff;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+
 /* -------------------------------------- */
 /* ROSS HOUSE — ROOT VARIABLES            */
 /* -------------------------------------- */
