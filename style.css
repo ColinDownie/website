@@ -1,46 +1,285 @@
+/* -------------------------------------- */
+/* ROSS HOUSE — ROOT VARIABLES            */
+/* -------------------------------------- */
 
-@font-face {
-    font-family: 'HillHouse';
-    src: url('fonts/HillHouse.ttf') format('truetype');
+:root {
+  /* Palette */
+  --ross-gold: #c6a667;
+  --ross-sandline: #e5dcc7;
+  --ross-parchment: #f7f3ec;
+  --ross-charcoal: #2b2b2b;
+  --ross-stone: #dcd6c8;
+
+  /* Spacing */
+  --space-xxs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-xxl: 3rem;
+
+  /* Typography */
+  --font-xxs: 0.75rem;
+  --font-xs: 0.85rem;
+  --font-sm: 1rem;
+  --font-md: 1.2rem;
+  --font-lg: 1.6rem;
+  --font-xl: 2.2rem;
+  --font-xxl: 3rem;
+
+  --line-tight: 1.2;
+  --line-normal: 1.5;
+  --line-loose: 1.7;
+
+  --track-tight: -0.01em;
+  --track-normal: 0.02em;
+  --track-wide: 0.08em;
+  --track-wider: 0.12em;
+
+  /* Division Accent Colours */
+  --accent-visual: #C46A3B;
+  --accent-media: #3A4F8F;
+  --accent-marketing: #8C2F39;
+  --accent-design: #4A5E7A;
+  --accent-clothing: #6B7A3C;
+  --accent-game: #2A8C82;
+  --accent-story: #8A5A3B;
+  --accent-sound: #A67C52;
+  --accent-experience: #7A5C9E;
+  --accent-future: #D46A2E;
+  --accent-mentoring: #9BAF88;
+  --accent-collab: #3F63B5;
+  --accent-education: #3E6B4F;
+  --accent-wellbeing: #C98A9A;
+  --accent-vector: #6E7B85;
+  --accent-astra: #5A3E7A;
+  --accent-nova: #D89A3A;
+  --accent-guardian: #1A1A1A;
 }
 
-* {
-    font-family: HillHouse;
-}
+/* -------------------------------------- */
+/* GLOBAL TYPOGRAPHY                      */
+/* -------------------------------------- */
 
 body {
-    background-color: rgb(237, 237, 237);
-    padding: 5%;
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", "Segoe UI", system-ui, sans-serif;
+  color: var(--ross-charcoal);
+  line-height: var(--line-normal);
+  background: #fff;
 }
 
-.blank-box {
-    background-color: white;
-    border-style: solid;
-    border-color: rgb(35, 48, 61);
+h1, h2, h3, h4 {
+  font-weight: 600;
+  margin: 0 0 var(--space-sm) 0;
+  color: var(--ross-charcoal);
 }
 
-.center {
-     text-align: center;
+h1 {
+  font-size: var(--font-xxl);
+  letter-spacing: var(--track-wider);
+  text-transform: uppercase;
 }
 
+h2 {
+  font-size: var(--font-xl);
+  letter-spacing: var(--track-wider);
+  text-transform: uppercase;
+}
 
-.icon {
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    stroke-width: 0;
-    stroke: currentColor;
-    fill: currentColor;
+h3 {
+  font-size: var(--font-md);
+  letter-spacing: var(--track-wide);
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: var(--font-sm);
+  letter-spacing: var(--track-wide);
+  text-transform: uppercase;
+}
+
+p {
+  margin: 0 0 var(--space-sm) 0;
+  font-size: var(--font-sm);
+  line-height: var(--line-loose);
+  opacity: 0.9;
+}
+
+/* -------------------------------------- */
+/* NAVIGATION + DROPDOWN                  */
+/* -------------------------------------- */
+
+.ross-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-md) var(--space-lg);
+  border-bottom: 1px solid var(--ross-sandline);
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.ross-nav-logo {
+  font-size: 1.4rem;
+  letter-spacing: 0.18em;
+  color: var(--ross-gold);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.ross-nav-links {
+  list-style: none;
+  display: flex;
+  gap: var(--space-lg);
+  margin: 0;
+  padding: 0;
+}
+
+.ross-nav-links li {
+  position: relative;
+}
+
+.ross-nav-links a {
+  text-decoration: none;
+  color: var(--ross-charcoal);
+  font-size: 0.95rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition: color 0.2s ease;
+}
+
+.ross-nav-links a:hover {
+  color: var(--ross-gold);
+}
+
+/* Dropdown */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: var(--ross-parchment);
+  border: 1px solid var(--ross-sandline);
+  padding: var(--space-sm) 0;
+  min-width: 200px;
+  z-index: 1000;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: var(--space-xs) var(--space-md);
+  color: var(--ross-charcoal);
+}
+
+.dropdown-menu a:hover {
+  background: var(--ross-sandline);
+}
+
+/* -------------------------------------- */
+/* HERO BANNERS                           */
+/* -------------------------------------- */
+
+.division-hero {
+  padding: var(--space-xxl) var(--space-md);
+  text-align: center;
+  color: #fff;
+  margin-bottom: var(--space-xl);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.division-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+}
+
+.division-hero-inner {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* -------------------------------------- */
+/* DIVISION PAGE LAYOUT                   */
+/* -------------------------------------- */
+
+.division-page-overview,
+.division-page-services,
+.division-page-projects,
+.division-page-cta {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: var(--space-xl) var(--space-md);
+}
+
+.division-service-block {
+  border-left: 3px solid var(--ross-gold);
+  padding-left: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.division-project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--space-md);
+}
+
+.division-project-card {
+  background: var(--ross-parchment);
+  border: 1px solid var(--ross-sandline);
+  padding: var(--space-lg);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.division-project-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--ross-gold);
+}
+
+/* CTA */
+.cta-button {
+  display: inline-block;
+  margin-top: var(--space-md);
+  padding: var(--space-sm) var(--space-lg);
+  background: var(--ross-gold);
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: var(--track-wide);
+  transition: background 0.2s ease;
+}
+
+.cta-button:hover {
+  background: var(--ross-charcoal);
+}
+
+/* -------------------------------------- */
+/* RESPONSIVE                             */
+/* -------------------------------------- */
+
+@media (max-width: 768px) {
+  .ross-nav {
+    flex-direction: column;
+    gap: var(--space-sm);
   }
-  
-  /* ==========================================
-  Single-colored icons can be modified like so:
-  .icon-name {
-    font-size: 32px;
-    color: red;
+
+  .division-hero {
+    padding: var(--space-xl) var(--space-sm);
   }
-  ========================================== */
-  
-  .icon-youtube2 {
-    width: 2.5087890625em;
+
+  .division-project-grid {
+    grid-template-columns: 1fr;
   }
+}
