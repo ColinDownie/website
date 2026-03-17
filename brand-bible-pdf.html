@@ -443,6 +443,21 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("scroll", activateLink);
 });
 </script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const fadeElements = document.querySelectorAll(".hor-fade");
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      }
+    });
+  }, { threshold: 0.2 });
+
+  fadeElements.forEach(el => observer.observe(el));
+});
+</script>
 
 </body>
 </html>
