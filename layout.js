@@ -2,6 +2,7 @@
 document.write(`
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
 `);
+
 /* PRELOADER */
 document.write(`
   <div id="preloader">
@@ -92,7 +93,6 @@ document.write(`
       <p>© Ross House — A Creative Dynasty</p>
     </div>
   </footer>
-    </footer>
 `);
 /* PRELOADER LOGIC */
 window.addEventListener("load", () => {
@@ -101,4 +101,3 @@ window.addEventListener("load", () => {
     preloader.classList.add("fade-out");
   }, 600);
 });
-
