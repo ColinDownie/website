@@ -1,0 +1,88 @@
+.fta-hero {
+  position: relative;
+  padding: 140px 20px 100px;
+  text-align: center;
+}
+.fta-hero-bg {
+  position: absolute;
+  inset: 0;
+  background: url('crest-fragment.png') center/contain no-repeat;
+  opacity: 0.05;
+}
+.fta-hero-content h1 {
+  font-size: 3rem;
+  color: #b08a3c;
+}
+.fta-hero-subtitle {
+  opacity: 0.85;
+  margin-bottom: 30px;
+}
+
+.fta-duet {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.fta-voice {
+  max-width: 320px;
+  padding: 20px;
+  background: rgba(255,255,255,0.7);
+  border-left: 4px solid #b08a3c;
+  border-radius: 4px;
+}
+.fta-everator p { color: #6a4f1f; }
+.fta-director p { color: #333; }
+
+.fta-section {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+.fta-section h2 {
+  color: #b08a3c;
+  margin-bottom: 10px;
+}
+.fta-section-intro {
+  opacity: 0.85;
+  margin-bottom: 40px;
+}
+
+.fta-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+.fta-card {
+  background: rgba(255,255,255,0.75);
+  padding: 24px;
+  border-left: 4px solid #b08a3c;
+  border-radius: 4px;
+  text-align: left;
+}
+.fta-thumb {
+  width: 100%;
+  height: 180px;
+  background: #e8e0d0;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+.fta-closing-crest {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 40px;
+  background: url('crest-fragment.png') center/contain no-repeat;
+  opacity: 0.08;
+}
+
+.hor-fade {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.8s ease;
+}
+.hor-fade.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
