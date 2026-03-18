@@ -1,0 +1,16 @@
+.lineage-oracle,
+.lineage-successor {
+  width: 260px;
+  height: 260px;
+  margin: 40px auto;
+  background: url('crest-fragment.png') center/contain no-repeat;
+  opacity: 0.12;
+}
+
+.lineage-law {
+  font-size: 1.4rem;
+  color: #6a4f1f;
+  font-style: italic;
+  margin: 20px 0;
+  text-align: center;
+}
