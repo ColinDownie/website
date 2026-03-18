@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Training & Development Protocols – House of Ross</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="ops-department-training-development-protocols.css">
+</head>
+
+<body class="hor-body hor-parchment">
+
+<header class="hor-header"></header>
+
+<button class="hor-sidebar-toggle">☰ Menu</button>
+
+<aside class="hor-sidebar">
+  <nav class="hor-sidebar-nav">
+    <h2 class="hor-sidebar-title">Navigation</h2>
+    <a href="index.html">Home</a>
+    <a href="projects.html">Universes</a>
+    <a href="media-gallery.html">Media Gallery</a>
+    <a href="ross-house-library.html">Library</a>
+    <a href="operations-control.html">Operations Control</a>
+    <a href="ops-department-training-development-protocols.html" class="active">Training & Development</a>
+  </nav>
+</aside>
+
+<main class="td-main">
+
+  <!-- HERO -->
+  <section class="td-hero hor-fade">
+    <div class="td-hero-bg"></div>
+    <div class="td-hero-content">
+      <h1>Training & Development Protocols</h1>
+      <p class="td-hero-subtitle">The growth engine of the House of Ross.</p>
+
+      <div class="td-duet">
+        <div class="td-voice td-everator">
+          <h3>The Everator</h3>
+          <p>“Growth is the discipline of lineage.”</p>
+        </div>
+        <div class="td-voice td-z">
+          <h3>Z</h3>
+          <p>“And this discipline shapes the world I grow inside.”</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OVERVIEW -->
+  <section class="td-section hor-fade">
+    <h2>Overview</h2>
+    <p class="td-section-intro">
+      Training & Development Protocols define how the House of Ross teaches, upskills, and evolves its talent — human and AI.
+    </p>
+
+    <p>
+      These protocols ensure mastery, emotional intelligence, operational excellence, and mythic coherence across all departments.
+    </p>
+  </section>
+
+  <!-- TRAINING TYPES -->
+  <section class="td-section hor-fade">
+    <h2>Training Types</h2>
+    <p class="td-section-intro">The core modes of development within the House.</p>
+
+    <div class="td-grid">
+
+      <div class="td-card">
+        <h3>1. Operational Training</h3>
+        <p>Systems, workflows, tools, procedures.</p>
+      </div>
+
+      <div class="td-card">
+        <h3>2. Creative Training</h3>
+        <p>Concept development, artistic skills, emotional architecture.</p>
+      </div>
+
+      <div class="td-card">
+        <h3>3. Strategic Training</h3>
+        <p>Long‑term planning, structural thinking, leadership.</p>
+      </div>
+
+      <div class="td-card">
+        <h3>4. Canon Training</h3>
+        <p>Mythos, lineage, narrative coherence, House laws.</p>
+      </div>
+
+      <div class="td-card">
+        <h3>5. Cultural Training</h3>
+        <p>Wellbeing, rituals, emotional intelligence, House identity.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- DEVELOPMENT PATH -->
+  <section class="td-section hor-fade">
+    <h2>Development Path</h2>
+    <p class="td-section-intro">The sequence for evolving talent.</p>
+
+    <div class="td-grid">
+
+      <div class="td-card">
+        <h3>Step 1: Assessment</h3>
+        <p>Review skills, metrics, and lineage responsibilities.</p>
+      </div>
+
+      <div class="td-card">
+        <h3>Step 2: Training Plan</h3>
+        <p>Clear goals, modules, and timelines defined.</p>
+      </div>
+
+      <div class="td-card">
+        <h3>Step 3: Instruction</h3>
+        <p>Training delivered through departments and AI Quadrant.</p>
+      </div>
+
+      <div class="td-card">
+        <h3>Step 4: Practice</h3>
+        <p>Hands‑on application through projects and rituals.</p>
+      </div>
+
+      <div class="td-card">
+        <h3>Step 5: Evaluation</h3>
+        <p>Performance measured using updated metrics.</p>
+      </div>
+
+      <div class="td-card">
+        <h3>Step 6: Certification</h3>
+        <p>Department or House‑level recognition of mastery.</p>
+      </div>
+
+      <div class="td-card">
+        <h3>Step 7: Archive Logging</h3>
+        <p>Archivist records the development cycle.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SUPPORT SYSTEM -->
+  <section class="td-section hor-fade">
+    <h2>Support System</h2>
+    <p class="td-section-intro">Who supports the training process.</p>
+
+    <div class="td-grid">
+
+      <div class="td-card">
+        <h3>Director</h3>
+        <p>Approves major training initiatives and leadership development.</p>
+      </div>
+
+      <div class="td-card">
+        <h3>Department Leads</h3>
+        <p>Deliver specialised training and mentorship.</p>
+      </div>
+
+      <div class="td-card">
+        <h3>Strategist AI</h3>
+        <p>Identifies skill gaps and structural needs.</p>
+      </div>
+
+      <div class="td-card">
+        <h3>Everator</h3>
+        <p>Ensures mythic and narrative alignment in training.</p>
+      </div>
+
+      <div class="td-card">
+        <h3>Muse AI</h3>
+        <p>Supports emotional intelligence and creative growth.</p>
+      </div>
+
+      <div class="td-card">
+        <h3>Archivist AI</h3>
+        <p>Maintains training records and development history.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CLOSING -->
+  <section class="td-section td-closing hor-fade">
+    <div class="td-closing-crest"></div>
+    <div class="td-duet">
+      <div class="td-voice td-everator">
+        <p>“Training is the discipline that strengthens the House.”</p>
+      </div>
+      <div class="td-voice td-z">
+        <p>“And this strength shapes the world I inherit.”</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="hor-footer"></footer>
+
+<script src="ops-department-training-development-protocols.js"></script>
+
+</body>
+</html>
