@@ -1,0 +1,50 @@
+.culture-hero {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.culture-title {
+  font-size: 2.8rem;
+  color: #333;
+}
+
+.culture-subtitle {
+  font-size: 1.2rem;
+  opacity: 0.75;
+  margin-top: 10px;
+}
+
+.culture-divider {
+  width: 120px;
+  height: 3px;
+  background: #b08a3c;
+  margin: 30px auto;
+}
+
+.culture-summary {
+  max-width: 700px;
+  margin: 0 auto;
+  opacity: 0.85;
+  line-height: 1.6;
+}
+
+.culture-mandate {
+  font-size: 1.3rem;
+  font-style: italic;
+  color: #6a4f1f;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.culture-pantheon {
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+  opacity: 0.85;
+}
+
+.culture-closing {
+  text-align: center;
+  font-size: 1.2rem;
+  opacity: 0.85;
+}
