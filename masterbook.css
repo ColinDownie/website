@@ -1,0 +1,102 @@
+.mb-header {
+  text-align: center;
+  padding: 40px 20px;
+}
+.mb-header h1 {
+  font-size: 3rem;
+  color: #b08a3c;
+}
+.mb-subtitle {
+  opacity: 0.7;
+}
+
+.mb-sidebar-toggle {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: #b08a3c;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.mb-sidebar {
+  position: fixed;
+  top: 0;
+  left: -260px;
+  width: 260px;
+  height: 100%;
+  background: #f8f3e8;
+  padding: 20px;
+  transition: left 0.3s ease;
+  overflow-y: auto;
+  border-right: 2px solid #b08a3c;
+}
+.mb-sidebar.open {
+  left: 0;
+}
+
+.mb-nav a {
+  display: block;
+  padding: 10px 0;
+  color: #333;
+  text-decoration: none;
+}
+.mb-nav a:hover {
+  color: #b08a3c;
+}
+
+.mb-main {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.mb-book {
+  margin-bottom: 100px;
+}
+.mb-book h2 {
+  color: #b08a3c;
+  margin-bottom: 10px;
+}
+.mb-intro {
+  opacity: 0.8;
+  margin-bottom: 30px;
+}
+
+.mb-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+.mb-card {
+  background: rgba(255,255,255,0.75);
+  padding: 20px;
+  border-left: 4px solid #b08a3c;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #333;
+  transition: background 0.3s ease;
+}
+.mb-card:hover {
+  background: rgba(255,255,255,0.9);
+}
+
+.mb-footer {
+  text-align: center;
+  padding: 40px 0;
+  opacity: 0.7;
+}
+
+.hor-fade {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.8s ease;
+}
+.hor-fade.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
