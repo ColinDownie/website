@@ -1,0 +1,55 @@
+.pantheon-hero {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.pantheon-title {
+  font-size: 2.8rem;
+  color: #333;
+}
+
+.pantheon-subtitle {
+  font-size: 1.2rem;
+  opacity: 0.75;
+  margin-top: 10px;
+}
+
+.pantheon-divider {
+  width: 120px;
+  height: 3px;
+  background: #b08a3c;
+  margin: 30px auto;
+}
+
+.pantheon-summary {
+  max-width: 700px;
+  margin: 0 auto;
+  opacity: 0.85;
+  line-height: 1.6;
+}
+
+.pantheon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.pantheon-card {
+  background: rgba(255,255,255,0.75);
+  padding: 24px;
+  border-left: 4px solid #b08a3c;
+  border-radius: 4px;
+}
+
+.pantheon-architecture {
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+  opacity: 0.85;
+}
+
+.pantheon-closing {
+  text-align: center;
+  font-size: 1.2rem;
+  opacity: 0.85;
+}
