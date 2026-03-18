@@ -1,0 +1,144 @@
+.rct-hero {
+  position: relative;
+  padding: 140px 20px 100px;
+  text-align: center;
+}
+.rct-hero-bg {
+  position: absolute;
+  inset: 0;
+  background: url('crest-fragment.png') center/contain no-repeat;
+  opacity: 0.05;
+}
+.rct-hero-content h1 {
+  font-size: 3rem;
+  color: #b08a3c;
+}
+.rct-hero-subtitle {
+  opacity: 0.85;
+  margin-bottom: 30px;
+}
+
+.rct-duet {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.rct-voice {
+  max-width: 320px;
+  padding: 20px;
+  background: rgba(255,255,255,0.7);
+  border-left: 4px solid #b08a3c;
+  border-radius: 4px;
+}
+.rct-everator p { color: #6a4f1f; }
+.rct-director p { color: #333; }
+
+.rct-section {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+.rct-section h2 {
+  color: #b08a3c;
+  margin-bottom: 10px;
+}
+.rct-section-intro {
+  opacity: 0.85;
+  margin-bottom: 40px;
+}
+
+.rct-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+.rct-card {
+  background: rgba(255,255,255,0.7);
+  padding: 24px;
+  border-left: 4px solid #b08a3c;
+  border-radius: 4px;
+  text-align: left;
+}
+
+/* FORM */
+.rct-form {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: left;
+  background: rgba(255,255,255,0.75);
+  padding: 30px 24px;
+  border-radius: 6px;
+  border-left: 4px solid #b08a3c;
+}
+.rct-field {
+  margin-bottom: 18px;
+}
+.rct-field label {
+  display: block;
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+  color: #5a4a2a;
+}
+.rct-field input,
+.rct-field textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 4px;
+  border: 1px solid #d2c4a5;
+  font: inherit;
+  background: #fdfaf4;
+}
+.rct-field input:focus,
+.rct-field textarea:focus {
+  outline: 2px solid #b08a3c;
+  outline-offset: 1px;
+}
+
+.rct-submit {
+  margin-top: 10px;
+  padding: 10px 22px;
+  border-radius: 999px;
+  border: none;
+  background: #b08a3c;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+.rct-submit:hover {
+  background: #9a7530;
+}
+
+.rct-note {
+  margin-top: 14px;
+  font-size: 0.85rem;
+  opacity: 0.8;
+  font-style: italic;
+}
+
+.rct-feedback {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #5a4a2a;
+}
+
+/* CLOSING */
+.rct-closing-crest {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 40px;
+  background: url('crest-fragment.png') center/contain no-repeat;
+  opacity: 0.08;
+}
+
+/* ANIMATION */
+.hor-fade {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.8s ease;
+}
+.hor-fade.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
