@@ -2,7 +2,6 @@
   position: relative;
   padding: 140px 20px 100px;
   text-align: center;
-  overflow: hidden;
 }
 
 .dept-hero-bg {
@@ -11,16 +10,14 @@
   width: 100%; height: 100%;
   background: url('crest-fragment.png') center/contain no-repeat;
   opacity: 0.05;
-  pointer-events: none;
 }
 
 .dept-hero-content h1 {
-  font-size: 2.6rem;
+  font-size: 3rem;
   color: #b08a3c;
 }
 
 .dept-hero-subtitle {
-  font-size: 1.1rem;
   opacity: 0.8;
   margin-bottom: 30px;
 }
@@ -28,38 +25,26 @@
 .dept-duet {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 40px;
   flex-wrap: wrap;
-  margin-top: 20px;
 }
 
 .dept-voice {
   max-width: 320px;
-  padding: 18px 20px;
+  padding: 20px;
   background: rgba(255,255,255,0.6);
   border-left: 4px solid #b08a3c;
   border-radius: 4px;
 }
 
-.dept-everator h3,
-.dept-everator p {
-  color: #6a4f1f;
-}
-
-.dept-z h3,
-.dept-z p {
-  color: #333;
-}
-
-.dept-main {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 40px 20px 80px;
-}
+.dept-everator p { color: #6a4f1f; }
+.dept-z p { color: #333; }
 
 .dept-section {
-  margin: 60px 0;
-  text-align: left;
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 20px;
+  text-align: center;
 }
 
 .dept-section h2 {
@@ -69,7 +54,7 @@
 
 .dept-section-intro {
   opacity: 0.8;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .dept-grid {
@@ -80,37 +65,20 @@
 
 .dept-card {
   background: rgba(255,255,255,0.6);
-  padding: 20px 22px;
+  padding: 24px;
   border-left: 4px solid #b08a3c;
   border-radius: 4px;
-}
-
-.dept-card h3 {
-  margin-bottom: 10px;
-}
-
-.dept-card ul,
-.dept-card ol {
-  padding-left: 18px;
-}
-
-.dept-list {
-  padding-left: 18px;
-}
-
-.dept-closing {
-  text-align: center;
+  text-align: left;
 }
 
 .dept-closing-crest {
-  width: 160px;
-  height: 160px;
-  margin: 0 auto 30px;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 40px;
   background: url('crest-fragment.png') center/contain no-repeat;
   opacity: 0.08;
 }
 
-/* Fade behaviour shared with other pages */
 .hor-fade {
   opacity: 0;
   transform: translateY(20px);
