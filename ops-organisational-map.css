@@ -1,0 +1,133 @@
+.org-hero {
+  position: relative;
+  padding: 140px 20px 100px;
+  text-align: center;
+}
+
+.org-hero-bg {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: url('crest-fragment.png') center/contain no-repeat;
+  opacity: 0.05;
+}
+
+.org-hero-content h1 {
+  font-size: 3rem;
+  color: #b08a3c;
+}
+
+.org-hero-subtitle {
+  opacity: 0.8;
+  margin-bottom: 30px;
+}
+
+.org-duet {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.org-voice {
+  max-width: 320px;
+  padding: 20px;
+  background: rgba(255,255,255,0.6);
+  border-left: 4px solid #b08a3c;
+  border-radius: 4px;
+}
+
+.org-everator p { color: #6a4f1f; }
+.org-z p { color: #333; }
+
+.org-section {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.org-section h2 {
+  color: #b08a3c;
+  margin-bottom: 10px;
+}
+
+.org-section-intro {
+  opacity: 0.8;
+  margin-bottom: 40px;
+}
+
+.org-map {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.org-root {
+  text-align: center;
+  background: rgba(255,255,255,0.7);
+  padding: 30px;
+  border-left: 4px solid #b08a3c;
+  border-radius: 4px;
+}
+
+.org-branch {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.org-wing {
+  background: rgba(255,255,255,0.6);
+  padding: 20px;
+  border-left: 4px solid #b08a3c;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.org-group h4 {
+  color: #6a4f1f;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.org-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.org-node {
+  display: block;
+  background: rgba(255,255,255,0.6);
+  padding: 20px;
+  border-left: 4px solid #b08a3c;
+  border-radius: 4px;
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.org-node:hover {
+  background: rgba(255,255,255,0.85);
+  transform: translateY(-4px);
+}
+
+.org-closing-crest {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 40px;
+  background: url('crest-fragment.png') center/contain no-repeat;
+  opacity: 0.08;
+}
+
+.hor-fade {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.8s ease;
+}
+
+.hor-fade.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
