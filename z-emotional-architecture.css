@@ -1,0 +1,72 @@
+.zea-hero {
+  text-align: center;
+  padding: 140px 20px 80px;
+  position: relative;
+}
+
+.zea-hero h1 {
+  font-size: 3rem;
+  color: #b08a3c;
+}
+
+.zea-tagline {
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+.zea-crest {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 520px;
+  height: 520px;
+  background: url('crest.png') no-repeat center/contain;
+  opacity: 0.05;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.zea-main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px 80px;
+}
+
+.zea-section {
+  margin: 60px 0;
+  text-align: center;
+}
+
+.zea-section h2 {
+  color: #b08a3c;
+  margin-bottom: 16px;
+}
+
+.zea-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  margin-top: 20px;
+}
+
+.zea-card {
+  background: rgba(255,255,255,0.6);
+  padding: 24px 20px;
+  border-left: 4px solid #b08a3c;
+  border-radius: 4px;
+}
+
+.zea-cta {
+  margin-top: 80px;
+}
+
+.hor-fade {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.8s ease;
+}
+
+.hor-fade.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
