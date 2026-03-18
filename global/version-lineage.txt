@@ -1,1 +1,25 @@
+ROSS HOUSE MASTERBOOK — VERSION LINEAGE
+---------------------------------------
+
+v1.0 — Canon Foundation
+- Created masterbook.html (Index Panel)
+- Added masterbook-cover.html (Cover Page)
+- Added masterbook-completion.html (Completion Page)
+
+v1.1 — Global Layer Established
+- Created global folder
+- Added masterbook-crest.html (Crest Component)
+- Added masterbook-crest.css (Crest Styling)
+- Added masterbook-chapter.html (Universal Chapter Template)
+- Added version-lineage.txt (This file)
+
+v1.2 — Book Structure Initiated
+- Book folders created (Studio, Clans, World, House, Family, Legacy)
+- Placeholder files added
+
+---------------------------------------
+NOTES:
+This lineage log is a living artefact.
+Every structural update, visual refinement, or canonical addition
+should be recorded here to preserve the evolution of the dynasty.
 
