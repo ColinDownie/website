@@ -1,0 +1,16 @@
+.architecture-diagram,
+.architecture-paths {
+  width: 300px;
+  height: 300px;
+  margin: 40px auto;
+  background: url('crest-fragment.png') center/contain no-repeat;
+  opacity: 0.12;
+}
+
+.architecture-law {
+  font-size: 1.4rem;
+  color: #6a4f1f;
+  font-style: italic;
+  margin: 20px 0;
+  text-align: center;
+}
