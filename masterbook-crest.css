@@ -1,0 +1,47 @@
+.crest-container {
+  display: flex;
+  justify-content: center;
+  margin: 120px 0;
+}
+
+.crest-ring {
+  width: 260px;
+  height: 260px;
+  border: 6px solid #b08a3c;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255,255,255,0.6);
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.crest-inner {
+  text-align: center;
+}
+
+.crest-title {
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.crest-subtitle {
+  font-size: 1rem;
+  opacity: 0.7;
+  margin-top: 6px;
+}
+
+.crest-line {
+  width: 80px;
+  height: 3px;
+  background: #b08a3c;
+  margin: 20px auto;
+}
+
+.crest-year {
+  font-size: 1rem;
+  letter-spacing: 3px;
+  opacity: 0.8;
+}
