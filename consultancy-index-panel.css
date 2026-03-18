@@ -1,0 +1,55 @@
+.consult-index-hero {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.consult-index-title {
+  font-size: 2.6rem;
+  color: #333;
+}
+
+.consult-index-subtitle {
+  font-size: 1.2rem;
+  opacity: 0.75;
+  margin-top: 10px;
+}
+
+.consult-index-divider {
+  width: 120px;
+  height: 3px;
+  background: #b08a3c;
+  margin: 30px auto;
+}
+
+.consult-index-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.consult-index-card {
+  background: rgba(255,255,255,0.75);
+  padding: 24px;
+  border-left: 4px solid #b08a3c;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #333;
+  transition: background 0.3s ease;
+}
+
+.consult-index-card:hover {
+  background: rgba(255,255,255,0.9);
+}
+
+.consult-index-map {
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+  opacity: 0.85;
+}
+
+.consult-index-closing {
+  text-align: center;
+  font-size: 1.2rem;
+  opacity: 0.85;
+}
