@@ -1,1 +1,45 @@
+/* ------------------------------
+   ROSS HOUSE — CREST COMPONENT
+   ------------------------------ */
+
+.crest-body {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  font-family: "Georgia", serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.crest-wrapper {
+  text-align: center;
+}
+
+.crest-circle {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 4px solid #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 12px auto;
+  background: #f7f7f7;
+}
+
+.crest-symbol {
+  font-size: 72px;
+  font-weight: bold;
+  color: #222;
+  letter-spacing: 2px;
+}
+
+.crest-caption {
+  font-size: 18px;
+  color: #444;
+  margin-top: 4px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
 
