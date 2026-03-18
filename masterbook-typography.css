@@ -1,0 +1,159 @@
+/* HEADER */
+
+.mt-header {
+  text-align: center;
+  padding: 40px 20px;
+}
+.mt-header h1 {
+  font-size: 3rem;
+  color: #b08a3c;
+}
+.mt-subtitle {
+  opacity: 0.75;
+}
+
+/* TYPEFACES */
+
+.mt-serif {
+  font-family: "Georgia", serif;
+  font-size: 1.4rem;
+  color: #6a4f1f;
+}
+
+.mt-sans {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.4rem;
+  color: #333;
+}
+
+/* MAIN */
+
+.mt-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.mt-section {
+  margin-bottom: 80px;
+  text-align: center;
+}
+.mt-section h2 {
+  color: #b08a3c;
+  margin-bottom: 10px;
+}
+.mt-intro {
+  opacity: 0.85;
+  margin-bottom: 40px;
+}
+
+/* TYPE SAMPLES */
+
+.mt-type-samples {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.mt-sample {
+  background: rgba(255,255,255,0.75);
+  padding: 24px;
+  border-left: 4px solid #b08a3c;
+  border-radius: 4px;
+  max-width: 360px;
+}
+
+/* HIERARCHY */
+
+.mt-hierarchy {
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.mt-hierarchy h1 {
+  font-size: 2.4rem;
+  color: #b08a3c;
+}
+.mt-hierarchy h2 {
+  font-size: 2rem;
+  color: #b08a3c;
+}
+.mt-hierarchy h3 {
+  font-size: 1.6rem;
+  color: #b08a3c;
+}
+.mt-hierarchy h4 {
+  font-size: 1.3rem;
+  color: #b08a3c;
+}
+.mt-caption {
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+/* GRID */
+
+.mt-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
+}
+.mt-card {
+  background: rgba(255,255,255,0.75);
+  padding: 24px;
+  border-left: 4px solid #b08a3c;
+  border-radius: 4px;
+}
+
+/* COLORS */
+
+.mt-colors {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
+}
+.mt-color {
+  padding: 40px 20px;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  border-left: 4px solid rgba(0,0,0,0.2);
+}
+
+/* CLOSING */
+
+.mt-closing-crest {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 40px;
+  background: url('crest-fragment.png') center/contain no-repeat;
+  opacity: 0.08;
+}
+
+.mt-duet {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.mt-voice {
+  max-width: 320px;
+  padding: 20px;
+  background: rgba(255,255,255,0.7);
+  border-left: 4px solid #b08a3c;
+  border-radius: 4px;
+}
+.mt-everator p { color: #6a4f1f; }
+.mt-director p { color: #333; }
+
+/* FADE */
+
+.hor-fade {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.8s ease;
+}
+.hor-fade.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
