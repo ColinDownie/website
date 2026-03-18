@@ -1,0 +1,92 @@
+/* HERO */
+.home-hero {
+  text-align: center;
+  padding: 160px 20px 120px;
+  position: relative;
+}
+
+.home-hero h1 {
+  font-size: 3.6rem;
+  color: #b08a3c;
+}
+
+.home-tagline {
+  font-size: 1.4rem;
+  opacity: 0.85;
+  margin-top: 10px;
+}
+
+.home-cta {
+  margin-top: 30px;
+}
+
+/* Crest watermark */
+.home-crest {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 620px;
+  height: 620px;
+  background: url('crest.png') no-repeat center/contain;
+  opacity: 0.05;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+/* MAIN */
+.home-main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px 80px;
+}
+
+/* SECTIONS */
+.home-section {
+  margin: 70px 0;
+  text-align: center;
+}
+
+.home-section h2 {
+  color: #b08a3c;
+  margin-bottom: 16px;
+}
+
+/* GRID */
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  margin-top: 20px;
+}
+
+.home-card {
+  background: rgba(255,255,255,0.6);
+  padding: 24px 20px;
+  border-left: 4px solid #b08a3c;
+  border-radius: 4px;
+  text-decoration: none;
+  color: inherit;
+  transition: 0.3s ease;
+}
+
+.home-card:hover {
+  background: rgba(255,255,255,0.8);
+  transform: translateY(-4px);
+}
+
+/* CTA bottom */
+.home-cta-bottom {
+  margin-top: 80px;
+}
+
+/* FADE-IN */
+.hor-fade {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.8s ease;
+}
+
+.hor-fade.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
