@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>House of Ross – Projects</title>
+  <title>Projects – House of Ross</title>
 
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="projects.css">
@@ -10,9 +10,7 @@
 
 <body class="hor-body hor-parchment">
 
-<header class="hor-header">
-  <!-- your global header -->
-</header>
+<header class="hor-header"></header>
 
 <button class="hor-sidebar-toggle">☰ Menu</button>
 
@@ -20,101 +18,76 @@
   <nav class="hor-sidebar-nav">
     <h2 class="hor-sidebar-title">Navigation</h2>
     <a href="index.html">Home</a>
-    <a href="production-bible-index.html">Production Bible</a>
-    <a href="projects.html" class="active">Projects</a>
+    <a href="projects.html">Projects</a>
+    <a href="ross-house-library.html">Library</a>
     <a href="contact.html">Contact</a>
   </nav>
 </aside>
 
-<main class="hor-main hor-main--projects">
+<main class="proj-main">
 
   <!-- HERO -->
-  <section class="projects-hero hor-fade">
-    <h1>Our Projects</h1>
-    <p class="projects-subtitle">The Worlds We Are Building</p>
+  <section class="proj-hero hor-fade">
+    <div class="proj-crest"></div>
+    <h1>Projects</h1>
+    <p class="proj-tagline">Choose a Universe. Enter a Mythos.</p>
   </section>
 
-  <!-- FILTERS -->
-  <section class="projects-filters hor-fade">
-    <button class="filter-btn active" data-filter="all">All</button>
-    <button class="filter-btn" data-filter="cinematic">Cinematic Worlds</button>
-    <button class="filter-btn" data-filter="mythic">Mythic Lore</button>
-    <button class="filter-btn" data-filter="bibles">Studio Bibles</button>
-    <button class="filter-btn" data-filter="brand">Brand Systems</button>
-    <button class="filter-btn" data-filter="fashion">Fashion & Textile</button>
-    <button class="filter-btn" data-filter="music">Music‑Driven</button>
-    <button class="filter-btn" data-filter="experimental">Experimental</button>
+  <!-- UNIVERSE SELECTOR -->
+  <section class="proj-section hor-fade">
+    <h2>Universes</h2>
+
+    <div class="proj-grid">
+
+      <a href="freedom-universe.html" class="proj-card">
+        <h3>Freedom</h3>
+        <p>Z’s evolution, elemental motion, performance mythology.</p>
+      </a>
+
+      <a href="everlight-universe.html" class="proj-card">
+        <h3>Everlight</h3>
+        <p>Light, memory, ascension, celestial truth.</p>
+      </a>
+
+      <a href="clan-legacy-universe.html" class="proj-card">
+        <h3>Clan Legacy</h3>
+        <p>Futurist factions, colour logic, unity rituals.</p>
+      </a>
+
+      <a href="pantheon-universe.html" class="proj-card">
+        <h3>Pantheon</h3>
+        <p>Archetypes, mythic forces, divine influence.</p>
+      </a>
+
+    </div>
   </section>
 
-  <!-- PROJECT GRID -->
-  <section class="projects-grid">
+  <!-- ARTEFACT LIBRARY -->
+  <section class="proj-section hor-fade">
+    <h2>Artefact Library</h2>
+    <p>The complete archive of bibles, codices, blueprints, and mythic documents.</p>
 
-    <!-- PROJECT CARD TEMPLATE -->
-    <a href="project-freedom.html" class="project-card hor-fade" data-category="cinematic mythic">
-      <h3>The Freedom Project</h3>
-      <p>The flagship mythic‑cinematic universe of the Ross Dynasty.</p>
-    </a>
+    <a href="ross-house-library.html" class="hor-button">Enter the Library</a>
+  </section>
 
-    <a href="project-elemental-z.html" class="project-card hor-fade" data-category="cinematic music experimental">
-      <h3>Elemental Warrior Z</h3>
-      <p>The hybrid evolution of the successor.</p>
-    </a>
+  <!-- STUDIO -->
+  <section class="proj-section hor-fade">
+    <h2>Studio & Consultancy</h2>
+    <p>The creative and operational engine of the dynasty.</p>
 
-    <a href="project-clan-legacy.html" class="project-card hor-fade" data-category="mythic cinematic">
-      <h3>Clan Legacy</h3>
-      <p>The futuristic clan mythology.</p>
-    </a>
+    <a href="studio-overview.html" class="hor-button">Studio Overview</a>
+  </section>
 
-    <a href="project-pantheon.html" class="project-card hor-fade" data-category="mythic">
-      <h3>The Pantheon</h3>
-      <p>Ealdric, Maerwyn, Tharion, Riot Seraph, Starmaker.</p>
-    </a>
-
-    <a href="project-spice-boys.html" class="project-card hor-fade" data-category="cinematic experimental">
-      <h3>Spice Boys</h3>
-      <p>Plasticine chaos with mythic heart.</p>
-    </a>
-
-    <a href="project-fashion.html" class="project-card hor-fade" data-category="fashion">
-      <h3>Ross House Fashion Archive</h3>
-      <p>Sportswear, gala suiting, golf attire.</p>
-    </a>
-
-    <a href="production-bible-index.html" class="project-card hor-fade" data-category="bibles">
-      <h3>Production Bible</h3>
-      <p>The cinematic constitution.</p>
-    </a>
-
-    <a href="studio-bible.html" class="project-card hor-fade" data-category="bibles">
-      <h3>Studio Bible</h3>
-      <p>The creative doctrine.</p>
-    </a>
-
-    <a href="project-consultancy.html" class="project-card hor-fade" data-category="brand">
-      <h3>The Ross Consultancy</h3>
-      <p>Brand systems, governance, lineage.</p>
-    </a>
-
-    <a href="project-animation-experiments.html" class="project-card hor-fade" data-category="experimental cinematic">
-      <h3>Mythic Animation Experiments</h3>
-      <p>Painterly → graphic novel → realism.</p>
-    </a>
-
-    <a href="project-z-performance.html" class="project-card hor-fade" data-category="music cinematic">
-      <h3>Z Performance System</h3>
-      <p>Hybrid avatar performance.</p>
-    </a>
-
+  <!-- CTA -->
+  <section class="proj-section hor-fade proj-cta">
+    <a href="index.html" class="hor-button">Return Home</a>
   </section>
 
 </main>
 
-<footer class="hor-footer">
-  <!-- your global footer -->
-</footer>
+<footer class="hor-footer"></footer>
 
 <script src="projects.js"></script>
 
 </body>
 </html>
-
