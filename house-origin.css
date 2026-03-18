@@ -1,0 +1,7 @@
+.origin-crest {
+  width: 260px;
+  height: 260px;
+  margin: 40px auto;
+  background: url('crest-fragment.png') center/contain no-repeat;
+  opacity: 0.12;
+}
