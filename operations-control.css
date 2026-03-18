@@ -1,0 +1,189 @@
+/* HERO */
+.ops-hero {
+  position: relative;
+  padding: 140px 20px 100px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.ops-hero-bg {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: url('crest-fragment.png') center/contain no-repeat;
+  opacity: 0.05;
+  pointer-events: none;
+}
+
+.ops-hero-content h1 {
+  font-size: 3rem;
+  color: #b08a3c;
+}
+
+.ops-hero-subtitle {
+  font-size: 1.2rem;
+  opacity: 0.8;
+  margin-bottom: 40px;
+}
+
+/* DUET */
+.ops-duet {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.ops-duet-small {
+  margin-top: 20px;
+}
+
+.ops-voice {
+  max-width: 320px;
+  padding: 20px;
+  background: rgba(255,255,255,0.6);
+  border-left: 4px solid #b08a3c;
+  border-radius: 4px;
+}
+
+.ops-everator h3,
+.ops-everator p {
+  color: #6a4f1f;
+}
+
+.ops-z h3,
+.ops-z p {
+  color: #333;
+}
+
+/* SECTION */
+.ops-section {
+  margin: 80px auto;
+  max-width: 1200px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.ops-section h2 {
+  color: #b08a3c;
+  margin-bottom: 10px;
+}
+
+.ops-section-intro {
+  opacity: 0.8;
+  margin-bottom: 40px;
+}
+
+/* MAP GRID */
+.ops-map-grid {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.ops-map-column {
+  flex: 1;
+  min-width: 300px;
+}
+
+.ops-tile-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.ops-tile {
+  display: block;
+  background: rgba(255,255,255,0.6);
+  padding: 20px;
+  border-left: 4px solid #b08a3c;
+  border-radius: 4px;
+  text-decoration: none;
+  color: inherit;
+  transition: 0.3s ease;
+}
+
+.ops-tile:hover {
+  background: rgba(255,255,255,0.85);
+  transform: translateY(-4px);
+}
+
+/* QUADRANT */
+.ops-quad-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.ops-quad-card {
+  background: rgba(255,255,255,0.6);
+  padding: 24px;
+  border-left: 4px solid #b08a3c;
+  border-radius: 4px;
+}
+
+/* RHYTHM */
+.ops-rhythm {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+}
+
+.ops-rhythm-day {
+  background: rgba(255,255,255,0.6);
+  padding: 20px;
+  border-left: 4px solid #b08a3c;
+  border-radius: 4px;
+}
+
+/* SPLIT PANELS */
+.ops-split {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.ops-split-panel {
+  flex: 1;
+  min-width: 300px;
+  background: rgba(255,255,255,0.6);
+  padding: 30px;
+  border-left: 4px solid #b08a3c;
+  border-radius: 4px;
+}
+
+.ops-link {
+  display: inline-block;
+  margin-top: 20px;
+  color: #b08a3c;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.ops-link-primary {
+  background: #b08a3c;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 4px;
+}
+
+/* CLOSING */
+.ops-closing-crest {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 40px;
+  background: url('crest-fragment.png') center/contain no-repeat;
+  opacity: 0.08;
+}
+
+/* FADE ANIMATION */
+.hor-fade {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.8s ease;
+}
+
+.hor-fade.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
