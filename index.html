@@ -2,157 +2,95 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <script src="layout.js"></script>
+  <title>House of Ross – Mythic Creative Dynasty</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="home.css">
 </head>
 
-<body class="division-index">
+<body class="hor-body hor-parchment">
 
-<!-- GLOBAL NAVIGATION -->
-<nav class="ross-nav">
-  <div class="ross-nav-logo">ROSS HOUSE</div>
+<header class="hor-header"></header>
 
-  <ul class="ross-nav-links">
-    <li><a href="index.html" class="active">Home</a></li>
-    <li><a href="philosophy.html">Our Philosophy</a></li>
-    <li><a href="#divisions">Divisions</a></li>
-    <li><a href="#services">Services</a></li>
-    <li><a href="site-map.html">Site Map</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</nav>
+<button class="hor-sidebar-toggle">☰ Menu</button>
 
-<!-- HERO -->
-<header class="hero">
-  <div class="hero-inner">
-    <h1>Ross House</h1>
-    <p>A creative dynasty of lineage, mythology, and emotionally intelligent design.</p>
-    <div class="hero-actions">
-      <a href="#divisions" class="cta-button">Explore Divisions</a>
-      <a href="contact.html" class="secondary-button">Start a Project</a>
-    </div>
-  </div>
-</header>
+<aside class="hor-sidebar">
+  <nav class="hor-sidebar-nav">
+    <h2 class="hor-sidebar-title">Navigation</h2>
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="ross-house-library.html">Library</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</aside>
 
-<!-- PHILOSOPHY -->
-<section id="philosophy" class="section philosophy">
-  <div class="section-inner">
-    <h2>Philosophy</h2>
-    <p>
-      Ross House is a living creative dynasty — a place where lineage, mythology,
-      music, and design converge. Every division is a room in the same house,
-      every project a new chapter in the same story. We treat structure as care,
-      emotion as architecture, and creativity as a long‑term inheritance.
-    </p>
-  </div>
-</section>
+<main class="home-main">
 
-<!-- DIVISIONS OVERVIEW -->
-<section id="divisions" class="section divisions-overview">
-  <div class="section-inner">
-    <h2>Divisions of the Ross House</h2>
-    <p class="section-intro">
-      Eighteen interconnected divisions form the Ross House — each with its own
-      focus, all sharing the same emotional and mythic DNA.
-    </p>
+  <!-- HERO -->
+  <section class="home-hero hor-fade">
+    <div class="home-crest"></div>
+    <h1>House of Ross</h1>
+    <p class="home-tagline">A Mythic Creative Dynasty</p>
+    <a href="projects.html" class="hor-button home-cta">Enter the Dynasty</a>
+  </section>
 
-    <div class="division-groups">
+  <!-- UNIVERSE SELECTOR -->
+  <section class="home-section hor-fade">
+    <h2>Explore the Universes</h2>
 
-      <!-- CORE CREATIVE -->
-      <div class="division-group">
-        <h3>Core Creative</h3>
-        <ul>
-          <li><a href="visual.html">Visual Concepts</a> — imagery, composition, and visual mythology.</li>
-          <li><a href="media.html">Media Concepts</a> — motion, editing, and hybrid storytelling.</li>
-          <li><a href="marketing.html">Marketing Concepts</a> — campaigns, positioning, and narrative strategy.</li>
-          <li><a href="design.html">Design Concepts</a> — systems, layouts, and brand architecture.</li>
-        </ul>
-      </div>
+    <div class="home-grid">
 
-      <!-- WORLD & FORM -->
-      <div class="division-group">
-        <h3>World & Form</h3>
-        <ul>
-          <li><a href="clothing.html">Clothing Concepts</a> — textile stories and wearable mythology.</li>
-          <li><a href="game.html">Game Concepts</a> — mechanics, rules, and interactive worlds.</li>
-          <li><a href="story.html">Story Concepts</a> — mythology, character arcs, and narrative DNA.</li>
-          <li><a href="sound.html">Sound & Music</a> — rhythm, voltage, and sonic identity.</li>
-          <li><a href="experience.html">Experience Concepts</a> — atmosphere, immersion, and ritual.</li>
-        </ul>
-      </div>
+      <a href="freedom-universe.html" class="home-card">
+        <h3>Freedom</h3>
+        <p>Z’s evolution, performance energy, elemental motion.</p>
+      </a>
 
-      <!-- FUTURE & CARE -->
-      <div class="division-group">
-        <h3>Future & Care</h3>
-        <ul>
-          <li><a href="future.html">Innovation & Futureform</a> — speculative systems and next‑era mythology.</li>
-          <li><a href="mentoring.html">Mentoring</a> — guidance, encouragement, and creative confidence.</li>
-          <li><a href="collab.html">Collaboration</a> — partnership and shared world‑building.</li>
-          <li><a href="education.html">Education Concepts</a> — learning frameworks and creative development.</li>
-          <li><a href="wellbeing.html">Wellbeing Concepts</a> — emotional grounding and restorative practice.</li>
-        </ul>
-      </div>
+      <a href="everlight-universe.html" class="home-card">
+        <h3>Everlight</h3>
+        <p>Light, memory, ascension, celestial truth.</p>
+      </a>
 
-      <!-- COSMIC & STRUCTURAL -->
-      <div class="division-group">
-        <h3>Cosmic & Structural</h3>
-        <ul>
-          <li><a href="vector.html">VECTOR</a> — precision, geometry, and technical visual systems.</li>
-          <li><a href="astra.html">ASTRA</a> — cosmic symbolism and mythic cosmology.</li>
-          <li><a href="nova.html">NOVA</a> — transformation, ignition, and creative rebirth.</li>
-          <li><a href="guardian.html">Guardian Quadrant</a> — governance, ethics, and stewardship.</li>
-        </ul>
-      </div>
+      <a href="clan-legacy-universe.html" class="home-card">
+        <h3>Clan Legacy</h3>
+        <p>Futurist factions, colour logic, unity rituals.</p>
+      </a>
+
+      <a href="pantheon-universe.html" class="home-card">
+        <h3>Pantheon</h3>
+        <p>Archetypes, mythic forces, divine influence.</p>
+      </a>
 
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- SERVICES SUMMARY -->
-<section id="services" class="section services-summary">
-  <div class="section-inner">
-    <h2>How We Work</h2>
-    <p class="section-intro">
-      Whether you need a single artefact or a full mythic ecosystem, Ross House
-      can engage at multiple levels.
-    </p>
+  <!-- LIBRARY -->
+  <section class="home-section hor-fade">
+    <h2>The Library</h2>
+    <p>The complete archive of bibles, codices, blueprints, and mythic documents.</p>
 
-    <div class="services-grid">
-      <div class="service-card">
-        <h3>Campaigns & Worlds</h3>
-        <p>End‑to‑end creative direction across story, sound, visual, and experience.</p>
-      </div>
-      <div class="service-card">
-        <h3>Systems & Frameworks</h3>
-        <p>Brand bibles, visual systems, governance models, and operational architecture.</p>
-      </div>
-      <div class="service-card">
-        <h3>Mentoring & Education</h3>
-        <p>Workshops, mentoring, and learning structures rooted in lineage and care.</p>
-      </div>
-      <div class="service-card">
-        <h3>Collaboration & Experimentation</h3>
-        <p>Cross‑disciplinary projects, speculative labs, and futureform prototypes.</p>
-      </div>
-    </div>
-  </div>
-</section>
+    <a href="ross-house-library.html" class="hor-button">Enter the Library</a>
+  </section>
 
-<!-- CALL TO ACTION -->
-<section class="section cta-main">
-  <div class="section-inner cta-main-inner">
-    <h2>Begin a New Chapter</h2>
-    <p>
-      If you feel a project, a world, or a character stirring — the Ross House
-      can give it structure, story, and emotional voltage.
-    </p>
-    <div class="hero-actions">
-      <a href="contact.html" class="cta-button">Contact the Studio</a>
-      <a href="site-map.html" class="secondary-button">View Full Site Map</a>
-    </div>
-  </div>
-</section>
+  <!-- STUDIO -->
+  <section class="home-section hor-fade">
+    <h2>The Studio</h2>
+    <p>The creative engine of the dynasty — culture, rituals, and production.</p>
+
+    <a href="studio-overview.html" class="hor-button">Studio Overview</a>
+  </section>
+
+  <!-- CTA -->
+  <section class="home-section hor-fade home-cta-bottom">
+    <a href="projects.html" class="hor-button">Begin Your Journey</a>
+  </section>
+
+</main>
+
+<footer class="hor-footer"></footer>
+
+<script src="home.js"></script>
+
 </body>
 </html>
+
 
