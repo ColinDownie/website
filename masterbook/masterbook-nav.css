@@ -1,0 +1,58 @@
+.masterbook-nav {
+  background: #111;
+  padding: 10px 20px;
+  border-bottom: 2px solid #333;
+  font-family: "Inter", sans-serif;
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav-list > li {
+  position: relative;
+}
+
+.nav-home {
+  font-weight: 600;
+  color: #fff;
+}
+
+.nav-section {
+  color: #ccc;
+  cursor: pointer;
+}
+
+.nav-section ul {
+  display: none;
+  position: absolute;
+  background: #1a1a1a;
+  padding: 10px 15px;
+  list-style: none;
+  border: 1px solid #333;
+  margin-top: 8px;
+  min-width: 180px;
+  z-index: 999;
+}
+
+.nav-section:hover ul {
+  display: block;
+}
+
+.nav-section ul li {
+  margin: 5px 0;
+}
+
+.nav-section ul li a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.nav-section ul li a:hover {
+  color: #fff;
+}
