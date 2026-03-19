@@ -64,6 +64,25 @@
   --font-body: "Inter", sans-serif;
   --font-heading: "Playfair Display", serif;
 
+    /* CRM TYPOGRAPHY SYSTEM */
+:root {
+  --font-body: "Inter", sans-serif;
+  --font-heading: "Playfair Display", serif;
+
+  --h1: 3.2rem;
+  --h2: 2.4rem;
+  --h3: 1.8rem;
+  --h4: 1.3rem;
+
+  --body: 1rem;
+  --small: 0.85rem;
+
+  --line-tight: 1.1;
+  --line-normal: 1.4;
+  --line-loose: 1.6;
+}
+
+
   --h1: 3rem;
   --h2: 2.4rem;
   --h3: 1.8rem;
