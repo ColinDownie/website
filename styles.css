@@ -552,6 +552,12 @@ body {
 .book-node:hover::after {
   opacity: 1;
 }
+/* Fade the intro out smoothly */
+.fade-out {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 1.4s ease;
+}
 
 
 
