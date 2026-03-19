@@ -56,3 +56,43 @@
   width: 140px;
   opacity: 0.92;
 }
+.dial-grid {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 240px;
+  height: 240px;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.dial {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 12px rgba(0,0,0,0.4),
+              0 0 10px rgba(255,255,255,0.2);
+  opacity: 0.92;
+  pointer-events: none;
+}
+
+/* Jewel colours */
+.dial-prod  { background: radial-gradient(circle, #ff2a2a, #8b0000); }
+.dial-pipe  { background: radial-gradient(circle, #2a9dff, #003f8b); }
+.dial-vis   { background: radial-gradient(circle, #ffd84a, #8b6a00); }
+.dial-anim  { background: radial-gradient(circle, #4aff7a, #006b2a); }
+.dial-std   { background: radial-gradient(circle, #d0d0d0, #6b6b6b); }
+.dial-tools { background: radial-gradient(circle, #1a1a1a, #000000); }
+
+@keyframes dialPulse {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.03); }
+  100% { transform: scale(1); }
+}
+
+.dial {
+  animation: dialPulse 4s ease-in-out infinite;
+}
