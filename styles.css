@@ -483,3 +483,80 @@ body {
   border: none;
 }
 
+.cosmos-ring {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.orbit {
+  position: relative;
+  width: 900px;
+  height: 900px;
+  border-radius: 50%;
+  animation: orbitRotate 120s linear infinite;
+}
+
+.book-node {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ffffff, #cccccc);
+  box-shadow: 0 0 10px rgba(255,255,255,0.6);
+  transform-origin: 450px 450px;
+}
+
+
+/* 24 nodes evenly spaced around the orbit */
+.book-node:nth-child(1)  { transform: rotate(0deg) translate(450px); }
+.book-node:nth-child(2)  { transform: rotate(15deg) translate(450px); }
+.book-node:nth-child(3)  { transform: rotate(30deg) translate(450px); }
+.book-node:nth-child(4)  { transform: rotate(45deg) translate(450px); }
+.book-node:nth-child(5)  { transform: rotate(60deg) translate(450px); }
+.book-node:nth-child(6)  { transform: rotate(75deg) translate(450px); }
+.book-node:nth-child(7)  { transform: rotate(90deg) translate(450px); }
+.book-node:nth-child(8)  { transform: rotate(105deg) translate(450px); }
+.book-node:nth-child(9)  { transform: rotate(120deg) translate(450px); }
+.book-node:nth-child(10) { transform: rotate(135deg) translate(450px); }
+.book-node:nth-child(11) { transform: rotate(150deg) translate(450px); }
+.book-node:nth-child(12) { transform: rotate(165deg) translate(450px); }
+.book-node:nth-child(13) { transform: rotate(180deg) translate(450px); }
+.book-node:nth-child(14) { transform: rotate(195deg) translate(450px); }
+.book-node:nth-child(15) { transform: rotate(210deg) translate(450px); }
+.book-node:nth-child(16) { transform: rotate(225deg) translate(450px); }
+.book-node:nth-child(17) { transform: rotate(240deg) translate(450px); }
+.book-node:nth-child(18) { transform: rotate(255deg) translate(450px); }
+.book-node:nth-child(19) { transform: rotate(270deg) translate(450px); }
+.book-node:nth-child(20) { transform: rotate(285deg) translate(450px); }
+.book-node:nth-child(21) { transform: rotate(300deg) translate(450px); }
+.book-node:nth-child(22) { transform: rotate(315deg) translate(450px); }
+.book-node:nth-child(23) { transform: rotate(330deg) translate(450px); }
+.book-node:nth-child(24) { transform: rotate(345deg) translate(450px); }
+}
+@keyframes orbitRotate {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.book-node::after {
+  content: attr(data-book);
+  position: absolute;
+  top: -28px;
+  left: -6px;
+  font-size: 12px;
+  color: #ffffffaa;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.book-node:hover::after {
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
