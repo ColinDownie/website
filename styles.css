@@ -567,6 +567,121 @@ body {
 #main-interface.active {
   opacity: 1;
 }
+/* INTRO CONTAINER */
+.intro {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  z-index: 9999;
+  opacity: 1;
+  transition: opacity 1.4s ease;
+}
+
+/* NEBULA BACKDROP */
+.nebula-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, #1a1a1a, #000);
+  z-index: -1;
+}
+
+/* STAR CLUSTERS */
+.star-clusters {
+  position: absolute;
+  top: 20%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10%;
+}
+
+.cluster {
+  width: 180px;
+  height: 180px;
+  background: radial-gradient(circle, #ffffffaa, #0000);
+  filter: blur(20px);
+  animation: pulseCluster 4s infinite ease-in-out;
+}
+
+@keyframes pulseCluster {
+  0% { transform: scale(1); opacity: 0.4; }
+  50% { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(1); opacity: 0.4; }
+}
+
+/* FACES ASSEMBLY */
+.faces-assembly {
+  display: flex;
+  gap: 80px;
+  margin-top: 120px;
+}
+
+.face-frame {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  background: #111;
+  overflow: hidden;
+  position: relative;
+}
+
+/* RUNES PANEL */
+.rune-panel {
+  margin-top: 60px;
+  text-align: center;
+  color: #fff;
+}
+
+.runes-stream {
+  height: 40px;
+  margin-bottom: 10px;
+  background: linear-gradient(90deg, #fff2, #fff8, #fff2);
+  animation: runesFlow 3s infinite linear;
+}
+
+@keyframes runesFlow {
+  0% { background-position: 0 0; }
+  100% { background-position: 200% 0; }
+}
+
+.runes-translation {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+/* ENTER BUTTON */
+.enter-button {
+  margin-top: 40px;
+  padding: 12px 40px;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  opacity: 0.3;
+  transition: opacity 0.4s ease, transform 0.3s ease;
+}
+
+.enter-button.enabled {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.enter-button.enabled:hover {
+  transform: translateY(-4px);
+}
 
 
 
