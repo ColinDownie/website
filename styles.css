@@ -567,6 +567,38 @@ body {
 #main-interface.active {
   opacity: 1;
 }
+/* ROSS TWIN FACES — INLINE, ELEGANT, EXPANDABLE */
+.face-frame {
+  width: 360px;
+  height: 360px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #111;
+  border: 3px solid #444;
+  box-shadow: 0 0 40px rgba(255,255,255,0.1);
+  position: relative;
+}
+.face-inner {
+  font-size: 2rem;
+  letter-spacing: 4px;
+  opacity: 0.8;
+  color: #fff;
+}
+/* LIGHT FACE */
+.face-light {
+  background: radial-gradient(circle at center, #ffffff, #cccccc, #888888);
+  border-color: #ffffffaa;
+  box-shadow: 0 0 60px rgba(255,255,255,0.4);
+}
+/* DARK FACE */
+.face-dark {
+  background: radial-gradient(circle at center, #222222, #000000);
+  border-color: #000000aa;
+  box-shadow: 0 0 60px rgba(0,0,0,0.6);
+}
 /* INTRO SEQUENCE — NAMESPACED AND SAFE */
 
 /* INTRO CONTAINER */
