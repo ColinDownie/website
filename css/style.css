@@ -76,6 +76,28 @@ p {
   font-size: 1.1rem;
   color: #444;
 }
+.hero-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 4rem auto;
+}
+.hero-centre {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 600px;
+}
+.hero-right h1 {
+  font-size: 3rem;
+  text-align: right;
+  margin-right: 2rem;
+}
+.hero-left {
+  display: flex;
+  justify-content: center;
+}
 
 /* COSMOLOGY GRID */
 .cosmology-grid {
