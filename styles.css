@@ -76,6 +76,49 @@ small {
   font-size: var(--small);
   opacity: 0.8;
 }
+/* ROSS HOUSE — TYPOGRAPHIC CREST SYSTEM */
+
+/* 1. ELONGATED HEADER STYLE */
+.ross-elongated {
+  font-family: var(--font-heading);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* 2. SYMBOLIC DIVIDER GLYPHS */
+.ross-divider {
+  width: 120px;
+  height: 1px;
+  background: var(--text);
+  opacity: 0.25;
+  margin: 20px auto;
+}
+
+/* 3. ROSS HOUSE MONOGRAM (GLYPH STYLE) */
+.ross-monogram {
+  font-family: var(--font-heading);
+  font-size: 3.6rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  font-weight: 700;
+  opacity: 0.9;
+}
+
+/* 4. EXTENDED TRACKING MODE */
+.ross-tracked {
+  letter-spacing: 0.12em;
+}
+
+/* 5. SECTION SIGIL */
+.ross-sigil {
+  width: 14px;
+  height: 14px;
+  border: 2px solid var(--text);
+  border-radius: 50%;
+  margin: 0 auto 12px auto;
+  opacity: 0.4;
+}
 
 /* HERO OVERRIDES */
 .hero h1,
