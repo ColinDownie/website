@@ -470,4 +470,16 @@ body {
     --h3: 1.5rem;
   }
 }
+.faces-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 60px 0;
+}
+
+.face-frame {
+  width: 360px;
+  height: 360px;
+  border: none;
+}
 
