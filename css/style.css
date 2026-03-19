@@ -60,18 +60,15 @@ p {
   border-radius: 4px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
-
-/* HERO SECTION */
+/* ===== HERO BLOCK GOES HERE ===== */
 .hero {
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
-
 .hero-text h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
 }
-
 .hero-text .intro {
   font-size: 1.1rem;
   color: #444;
@@ -83,11 +80,45 @@ p {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto 4rem auto;
+  margin-bottom: 5rem;
 }
 .hero-centre {
   text-align: center;
   margin: 0 auto;
   max-width: 600px;
+}
+.tagline-large {
+  font-size: 2.2rem;
+  font-weight: 400;
+  letter-spacing: 0.15rem;
+  margin-bottom: 1.2rem;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.6rem;
+}
+.tagline-large::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    rgba(212, 175, 55, 0.0) 0%,
+    rgba(212, 175, 55, 1) 50%,
+    rgba(212, 175, 55, 0.0) 100%
+  );
+  width: 0%;
+  animation: 
+    goldUnderline 1.8s ease forwards,
+    goldUnderlineShimmer 2.8s ease-in-out infinite 1.8s;
+}
+.dynasty-lines {
+  font-size: 1.6rem;
+  font-weight: 300;
+  letter-spacing: 0.05rem;
+  line-height: 1.4;
+  color: #333;
 }
 .hero-right h1 {
   font-size: 4rem;
@@ -97,10 +128,27 @@ p {
   text-align: right;
   margin-right: 2rem;
   line-height: 1.1;
+  animation: titleGlow 5s ease-in-out infinite;
 }
 .hero-left {
   display: flex;
   justify-content: center;
+}
+.crest-box::before {
+  content: "";
+  position: absolute;
+  top: -20%;
+  left: -20%;
+  width: 140%;
+  height: 140%;
+  background: radial-gradient(
+    circle,
+    rgba(212, 175, 55, 0.18) 0%,
+    rgba(212, 175, 55, 0.08) 40%,
+    rgba(212, 175, 55, 0) 70%
+  );
+  z-index: -1;
+  animation: royalGlow 7s ease-in-out infinite;
 }
 .crest-box {
   border: 1px solid #ddd;
@@ -109,16 +157,31 @@ p {
   background: #fff;
   max-width: 260px;
   margin: 0 auto;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  position: relative;
+  overflow: hidden;
+ animation: goldSweep 4.5s ease-in-out infinite;
 }
-
+.crest-box::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  animation: crestHighlight 6s ease-in-out infinite;
+}
 /* COSMOLOGY GRID */
 .cosmology-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
 }
-
 .cosmo-card {
   background: #fff;
   border: 1px solid #eee;
@@ -133,18 +196,15 @@ p {
   border-radius: 4px;
   margin-bottom: 0.5rem;
 }
-
 .cosmo-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 12px 30px rgba(0,0,0,0.1);
 }
-
 /* FEATURED VIDEO */
 .featured-video {
   padding: 6rem 4rem;
   text-align: center;
 }
-
 .video-frame {
   max-width: 900px;
   margin: 0 auto 1rem auto;
@@ -152,46 +212,38 @@ p {
   border-radius: 6px;
   overflow: hidden;
 }
-
 .video-frame video {
   width: 100%;
   display: block;
 }
-
 /* TEXTILE ARCHIVE */
 .textile-archive {
   padding: 6rem 4rem;
 }
-
 .textile-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
 }
-
 .textile-grid img {
   width: 100%;
   border-radius: 4px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.08);
 }
-
 /* AVATAR GALLERY */
 .avatar-gallery {
   padding: 6rem 4rem;
 }
-
 .avatar-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
 }
-
 .avatar-grid img {
   width: 100%;
   border-radius: 4px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.08);
 }
-
 /* FOOTER */
 .footer {
   padding: 4rem;
@@ -199,8 +251,111 @@ p {
   border-top: 1px solid #eee;
   margin-top: 4rem;
 }
-
 .footer-crest {
   width: 60px;
   margin-bottom: 1rem;
 }
+/* ========================= */
+/* HERO ANIMATION            */
+/* ========================= */
+.hero, .hero-inner, .hero-centre {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: heroFade 1.4s ease forwards;
+}
+@keyframes heroFade {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+/* ========================= */
+/* GOLD SHIMMER ANIMATION   */
+/* ========================= */
+@keyframes goldShimmer {
+  0% {
+    box-shadow: 0 12px 30px rgba(212, 175, 55, 0.10);
+  }
+  50% {
+    box-shadow: 0 16px 40px rgba(212, 175, 55, 0.25);
+  }
+  100% {
+    box-shadow: 0 12px 30px rgba(212, 175, 55, 0.10);
+  }
+/* ========================= */
+/* GOLD SHIMMER SWEEP        */
+/* ========================= */
+
+@keyframes goldSweep {
+  0% {
+    box-shadow: 0 12px 30px rgba(212, 175, 55, 0.10);
+    filter: brightness(1);
+  }
+  50% {
+    box-shadow: 0 18px 45px rgba(212, 175, 55, 0.28);
+    filter: brightness(1.08);
+  }
+  100% {
+    box-shadow: 0 12px 30px rgba(212, 175, 55, 0.10);
+    filter: brightness(1);
+  }
+@keyframes royalGlow {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.08);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+/* ========================= */
+/* ROSS HOUSE GOLD GLOW      */
+/* ========================= */
+
+@keyframes titleGlow {
+  0% {
+    text-shadow: 0 0 0px rgba(212, 175, 55, 0.0);
+  }
+  50% {
+    text-shadow: 
+      0 0 6px rgba(212, 175, 55, 0.35),
+      0 0 12px rgba(212, 175, 55, 0.25);
+  }
+  100% {
+    text-shadow: 0 0 0px rgba(212, 175, 55, 0.0);
+  }
+/* ========================= */
+/* GOLD UNDERLINE REVEAL     */
+/* ========================= */
+
+@keyframes goldUnderline {
+  0% {
+    width: 0%;
+    opacity: 0;
+  }
+  40% {
+    width: 100%;
+    opacity: 1;
+  }
+  100% {
+    width: 100%;
+    opacity: 1;
+  }
+@keyframes goldUnderlineShimmer {
+  0% {
+    box-shadow: 0 0 0 rgba(212, 175, 55, 0);
+  }
+  50% {
+    box-shadow: 0 0 8px rgba(212, 175, 55, 0.35);
+  }
+  100% {
+    box-shadow: 0 0 0 rgba(212, 175, 55, 0);
+  }
+}
+
+
+
+
