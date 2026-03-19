@@ -1,1 +1,171 @@
+* =============================== */
+/* ROSS HOUSE HYBRID CSS — v1.0    */
+/* CRM × PIXAR × LINE STUDIO       */
+/* =============================== */
 
+/* GLOBAL RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background: #ffffff;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* TYPOGRAPHY */
+h1, h2, h3 {
+  font-family: "Georgia", serif;
+  font-weight: 500;
+  color: #111;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1.2rem;
+  max-width: 600px;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+  color: #555;
+}
+
+/* SPLIT SCREEN LAYOUT */
+.split-screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem 4rem;
+  gap: 4rem;
+}
+
+.split-screen.reverse {
+  flex-direction: row-reverse;
+}
+
+.split-left, .split-right {
+  flex: 1;
+}
+
+.split-left img, 
+.split-right img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* HERO SECTION */
+.hero {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text .intro {
+  font-size: 1.1rem;
+  color: #444;
+}
+
+/* COSMOLOGY GRID */
+.cosmology-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.cosmo-card {
+  background: #fff;
+  border: 1px solid #eee;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 4px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cosmo-card img {
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+.cosmo-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+}
+
+/* FEATURED VIDEO */
+.featured-video {
+  padding: 6rem 4rem;
+  text-align: center;
+}
+
+.video-frame {
+  max-width: 900px;
+  margin: 0 auto 1rem auto;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.video-frame video {
+  width: 100%;
+  display: block;
+}
+
+/* TEXTILE ARCHIVE */
+.textile-archive {
+  padding: 6rem 4rem;
+}
+
+.textile-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.textile-grid img {
+  width: 100%;
+  border-radius: 4px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* AVATAR GALLERY */
+.avatar-gallery {
+  padding: 6rem 4rem;
+}
+
+.avatar-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.avatar-grid img {
+  width: 100%;
+  border-radius: 4px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* FOOTER */
+.footer {
+  padding: 4rem;
+  text-align: center;
+  border-top: 1px solid #eee;
+  margin-top: 4rem;
+}
+
+.footer-crest {
+  width: 60px;
+  margin-bottom: 1rem;
+}
