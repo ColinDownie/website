@@ -105,3 +105,35 @@
 .face-crest {
   animation: crestBreath 6s ease-in-out infinite;
 }
+@keyframes rimShimmer {
+  0%   { box-shadow: 0 0 20px rgba(255,255,255,0.2); }
+  50%  { box-shadow: 0 0 28px rgba(255,255,255,0.35); }
+  100% { box-shadow: 0 0 20px rgba(255,255,255,0.2); }
+}
+
+.face-rim-light {
+  animation: rimShimmer 8s ease-in-out infinite;
+}
+
+.face-rim-dark {
+  animation: rimShimmer 8s ease-in-out infinite;
+}
+@keyframes dialRotate {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.dial {
+  animation: dialRotate 20s linear infinite, dialPulse 4s ease-in-out infinite;
+}
+@keyframes jewelGlint {
+  0%   { filter: brightness(1); }
+  50%  { filter: brightness(1.15); }
+  100% { filter: brightness(1); }
+}
+
+.dial {
+  animation: dialRotate 20s linear infinite,
+             dialPulse 4s ease-in-out infinite,
+             jewelGlint 6s ease-in-out infinite;
+}
