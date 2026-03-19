@@ -558,6 +558,15 @@ body {
   pointer-events: none;
   transition: opacity 1.4s ease;
 }
+/* Fade the main interface in */
+#main-interface {
+  opacity: 0;
+  transition: opacity 1.4s ease;
+}
+
+#main-interface.active {
+  opacity: 1;
+}
 
 
 
