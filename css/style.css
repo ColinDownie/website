@@ -90,13 +90,25 @@ p {
   max-width: 600px;
 }
 .hero-right h1 {
-  font-size: 3rem;
+  font-size: 3.6rem;
+  font-weight: 300;
+  letter-spacing: 0.45rem;
+  text-transform: uppercase;
   text-align: right;
   margin-right: 2rem;
 }
 .hero-left {
   display: flex;
   justify-content: center;
+}
+.crest-box {
+  border: 1px solid #ddd;
+  padding: 2rem;
+  border-radius: 4px;
+  background: #fff;
+  max-width: 260px;
+  margin: 0 auto;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
 }
 
 /* COSMOLOGY GRID */
