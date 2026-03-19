@@ -96,3 +96,12 @@
 .dial {
   animation: dialPulse 4s ease-in-out infinite;
 }
+@keyframes crestBreath {
+  0%   { transform: scale(1); opacity: 0.92; }
+  50%  { transform: scale(1.03); opacity: 1; }
+  100% { transform: scale(1); opacity: 0.92; }
+}
+
+.face-crest {
+  animation: crestBreath 6s ease-in-out infinite;
+}
