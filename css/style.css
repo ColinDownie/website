@@ -1,5 +1,5 @@
-* =============================== */
-/* ROSS HOUSE HYBRID CSS — v1.0    */
+/* =============================== */
+/* ROSS HOUSE HYBRID CSS — v2.0    */
 /* CRM × PIXAR × LINE STUDIO       */
 /* =============================== */
 
@@ -36,7 +36,9 @@ p {
   color: #555;
 }
 
-/* SPLIT SCREEN LAYOUT */
+/* ========================= */
+/* SPLIT SCREEN LAYOUT       */
+/* ========================= */
 .split-screen {
   display: flex;
   align-items: center;
@@ -53,92 +55,55 @@ p {
   flex: 1;
 }
 
-.split-left img, 
+.split-left img,
 .split-right img {
   width: 100%;
   height: auto;
   border-radius: 4px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
-/* ===== HERO BLOCK GOES HERE ===== */
+
+/* ========================= */
+/* HERO — C3-C POSTER LAYOUT */
+/* ========================= */
+
 .hero {
-  padding-top: 10rem;
-  padding-bottom: 10rem;
-}
-.hero-text h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-.hero-text .intro {
-  font-size: 1.1rem;
-  color: #444;
-}
-.hero-inner {
+  padding: 8rem 2rem 9rem 2rem;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto 4rem auto;
-  margin-bottom: 5rem;
-}
-.hero-centre {
   text-align: center;
-  margin: 0 auto;
-  max-width: 600px;
-  opacity: 0;
-  animation: heroFade 1.4s ease forwards;
-  animation-delay: 1.4s;
-}
-.tagline-large {
-  font-size: 2.2rem;
-  font-weight: 400;
-  letter-spacing: 0.15rem;
-  margin-bottom: 1.2rem;
-  position: relative;
-  display: inline-block;
-  padding-bottom: 0.6rem;
-}
-.tagline-large::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 2px;
   background: linear-gradient(
-    90deg,
-    rgba(212, 175, 55, 0.0) 0%,
-    rgba(212, 175, 55, 1) 50%,
-    rgba(212, 175, 55, 0.0) 100%
+    180deg,
+    #ffffff 0%,
+    #fdf8ec 45%,
+    #ffffff 100%
   );
-  width: 0%;
-  animation: 
-  goldUnderline 1.8s ease forwards,
-  goldUnderlineShimmer 2.8s ease-in-out infinite 1.8s;
-  animation-delay: 1.0s;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: heroFade 1.4s ease forwards;
 }
-.dynasty-lines {
-  font-size: 1.6rem;
-  font-weight: 300;
-  letter-spacing: 0.05rem;
-  line-height: 1.4;
-  color: #333;
+
+.hero-inner {
+  max-width: 720px;
+  width: 100%;
+  margin: 0 auto;
 }
-.hero-right h1 {
-  font-size: 4rem;
-  font-weight: 300;
-  letter-spacing: 0.55rem;
-  text-transform: uppercase;
-  text-align: right;
-  margin-right: 2rem;
-  line-height: 1.1;
-  animation: titleGlow 5s ease-in-out infinite, heroFade 1.4s ease forwards;
-  animation-delay: 0.6s;
+
+/* CREST */
+.crest-box {
+  border: 1px solid #ddd;
+  padding: 2rem;
+  border-radius: 4px;
+  background: #fff;
+  max-width: 260px;
+  margin: 0 auto 2.5rem auto;
+  position: relative;
+  overflow: hidden;
+  animation: goldSweep 4.5s ease-in-out infinite, heroFade 1.4s ease forwards;
+  animation-delay: 0.2s;
 }
-.hero-left {
-  display: flex;
-  justify-content: center;
-}
+
 .crest-box::before {
   content: "";
   position: absolute;
@@ -154,20 +119,8 @@ p {
   );
   z-index: -1;
   animation: royalGlow 7s ease-in-out infinite;
-  animation-delay: 0.2s;
 }
-.crest-box {
-  border: 1px solid #ddd;
-  padding: 2rem;
-  border-radius: 4px;
-  background: #fff;
-  max-width: 260px;
-  margin: 0 auto;
-  position: relative;
-  overflow: hidden;
-  animation: goldSweep 4.5s ease-in-out infinite, heroFade 1.4s ease forwards;
-  animation-delay: 0.2s;
-}
+
 .crest-box::after {
   content: "";
   position: absolute;
@@ -183,12 +136,77 @@ p {
   );
   animation: crestHighlight 6s ease-in-out infinite;
 }
-/* COSMOLOGY GRID */
+
+/* TITLE */
+.hero-title {
+  margin-bottom: 1.4rem;
+}
+
+.hero-title h1 {
+  font-size: 3.6rem;
+  font-weight: 300;
+  letter-spacing: 0.55rem;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.1;
+  animation: titleGlow 5s ease-in-out infinite, heroFade 1.4s ease forwards;
+  animation-delay: 0.6s;
+}
+
+/* TAGLINE */
+.tagline-large {
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: 0.18rem;
+  margin-bottom: 1.4rem;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.6rem;
+}
+
+.tagline-large::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    rgba(212, 175, 55, 0.0) 0%,
+    rgba(212, 175, 55, 1) 50%,
+    rgba(212, 175, 55, 0.0) 100%
+  );
+  width: 0%;
+  animation:
+    goldUnderline 1.8s ease forwards,
+    goldUnderlineShimmer 2.8s ease-in-out infinite 1.8s;
+  animation-delay: 1.0s;
+}
+
+/* DYNASTY LINES */
+.dynasty-lines {
+  font-size: 1.4rem;
+  font-weight: 300;
+  letter-spacing: 0.05rem;
+  line-height: 1.5;
+  color: #333;
+  max-width: 520px;
+  margin: 0.8rem auto 0 auto;
+  opacity: 0;
+  animation: heroFade 1.4s ease forwards;
+  animation-delay: 1.4s;
+}
+
+/* ========================= */
+/* COSMOLOGY GRID            */
+/* ========================= */
+
 .cosmology-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
 }
+
 .cosmo-card {
   background: #fff;
   border: 1px solid #eee;
@@ -203,15 +221,21 @@ p {
   border-radius: 4px;
   margin-bottom: 0.5rem;
 }
+
 .cosmo-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 12px 30px rgba(0,0,0,0.1);
 }
-/* FEATURED VIDEO */
+
+/* ========================= */
+/* FEATURED VIDEO            */
+/* ========================= */
+
 .featured-video {
   padding: 6rem 4rem;
   text-align: center;
 }
+
 .video-frame {
   max-width: 900px;
   margin: 0 auto 1rem auto;
@@ -219,57 +243,71 @@ p {
   border-radius: 6px;
   overflow: hidden;
 }
+
 .video-frame video {
   width: 100%;
   display: block;
 }
-/* TEXTILE ARCHIVE */
+
+/* ========================= */
+/* TEXTILE ARCHIVE           */
+/* ========================= */
+
 .textile-archive {
   padding: 6rem 4rem;
 }
+
 .textile-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
 }
+
 .textile-grid img {
   width: 100%;
   border-radius: 4px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.08);
 }
-/* AVATAR GALLERY */
+
+/* ========================= */
+/* AVATAR GALLERY            */
+/* ========================= */
+
 .avatar-gallery {
   padding: 6rem 4rem;
 }
+
 .avatar-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
 }
+
 .avatar-grid img {
   width: 100%;
   border-radius: 4px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.08);
 }
-/* FOOTER */
+
+/* ========================= */
+/* FOOTER                    */
+/* ========================= */
+
 .footer {
   padding: 4rem;
   text-align: center;
   border-top: 1px solid #eee;
   margin-top: 4rem;
 }
+
 .footer-crest {
   width: 60px;
   margin-bottom: 1rem;
 }
+
 /* ========================= */
-/* HERO ANIMATION            */
+/* HERO ANIMATION CORE       */
 /* ========================= */
-.hero, .hero-inner, .hero-centre {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: heroFade 1.4s ease forwards;
-}
 
 @keyframes heroFade {
   to {
@@ -279,23 +317,9 @@ p {
 }
 
 /* ========================= */
-/* GOLD SHIMMER ANIMATION   */
+/* GOLD SHIMMER / SWEEP      */
 /* ========================= */
-@keyframes goldShimmer {
-  0% {
-    box-shadow: 0 12px 30px rgba(212, 175, 55, 0.10);
-  }
-  50% {
-    box-shadow: 0 16px 40px rgba(212, 175, 55, 0.25);
-  }
-  100% {
-    box-shadow: 0 12px 30px rgba(212, 175, 55, 0.10);
-  }
-}
 
-/* ========================= */
-/* GOLD SHIMMER SWEEP        */
-/* ========================= */
 @keyframes goldSweep {
   0% {
     box-shadow: 0 12px 30px rgba(212, 175, 55, 0.10);
@@ -311,9 +335,6 @@ p {
   }
 }
 
-/* ========================= */
-/* ROYAL GLOW AURA           */
-/* ========================= */
 @keyframes royalGlow {
   0% {
     transform: scale(1);
@@ -329,9 +350,29 @@ p {
   }
 }
 
+@keyframes crestHighlight {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  20% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  60% {
+    transform: translateX(50%);
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
 /* ========================= */
-/* ROSS HOUSE GOLD GLOW      */
+/* TITLE GOLD GLOW           */
 /* ========================= */
+
 @keyframes titleGlow {
   0% {
     text-shadow: 0 0 0px rgba(212, 175, 55, 0.0);
@@ -349,6 +390,7 @@ p {
 /* ========================= */
 /* GOLD UNDERLINE REVEAL     */
 /* ========================= */
+
 @keyframes goldUnderline {
   0% {
     width: 0%;
@@ -375,5 +417,3 @@ p {
     box-shadow: 0 0 0 rgba(212, 175, 55, 0);
   }
 }
-
-
