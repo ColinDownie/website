@@ -276,6 +276,57 @@ p {
   background-repeat: no-repeat;
   opacity: 0.8;
 }
+/* ========================= */
+/* BACK OFFICE HOMEPAGE */
+/* ========================= */
+
+.backoffice-nav {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 1.2rem 4rem;
+  font-size: 1.3rem;
+}
+
+.backoffice-nav a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 400;
+}
+
+.backoffice-nav a:hover {
+  text-decoration: underline;
+}
+
+.backoffice-nav span {
+  color: #999;
+}
+
+.backoffice-breadcrumb {
+  padding: 0 4rem 1rem 4rem;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.backoffice-breadcrumb a {
+  color: #444;
+  text-decoration: none;
+}
+
+.backoffice-breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.backoffice-crest {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.backoffice-crest img {
+  width: 80px;
+  height: auto;
+  opacity: 0.9;
+}
 
 
 /* ========================= */
