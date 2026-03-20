@@ -48,6 +48,69 @@ p {
 .backoffice-list li {
   margin-bottom: 0.8rem;
 }
+/* BACK OFFICE DIVISION PANELS */
+.backoffice-governance .split-right,
+.backoffice-documentation .split-right,
+.backoffice-archive .split-right,
+.backoffice-systems .split-right,
+.backoffice-emotional .split-right {
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(6px);
+  border-radius: 8px;
+  padding: 2.5rem;
+  border-left: 4px solid rgba(212, 175, 55, 0.55);
+  animation: backofficeFade 1.2s ease-out 0.4s both;
+}
+
+/* DIVISION TITLE GLOW */
+.backoffice-governance h2,
+.backoffice-documentation h2,
+.backoffice-archive h2,
+.backoffice-systems h2,
+.backoffice-emotional h2 {
+  position: relative;
+}
+
+.backoffice-governance h2::after,
+.backoffice-documentation h2::after,
+.backoffice-archive h2::after,
+.backoffice-systems h2::after,
+.backoffice-emotional h2::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 180%;
+  height: 180%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.25), transparent 70%);
+  z-index: -1;
+}
+
+/* GOLD UNDERLINE FOR SUBHEADERS */
+.backoffice-governance h3,
+.backoffice-documentation h3,
+.backoffice-archive h3,
+.backoffice-systems h3,
+.backoffice-emotional h3 {
+  position: relative;
+  margin-bottom: 1rem;
+  padding-bottom: 0.4rem;
+}
+
+.backoffice-governance h3::after,
+.backoffice-documentation h3::after,
+.backoffice-archive h3::after,
+.backoffice-systems h3::after,
+.backoffice-emotional h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 3rem;
+  height: 2px;
+  background: linear-gradient(to right, rgba(212, 175, 55, 1), rgba(212, 175, 55, 0));
+}
 
 /* ========================= */
 /* SPLIT SCREEN LAYOUT       */
@@ -75,6 +138,99 @@ p {
   border-radius: 4px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
+/* ========================= */
+/* BACK OFFICE — GLOBAL STYLES */
+/* ========================= */
+
+.backoffice-page {
+  padding: 6rem 4rem;
+}
+
+.backoffice-page h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.backoffice-page h1::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200%;
+  height: 200%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle, rgba(212,175,55,0.25), transparent 70%);
+  z-index: -1;
+}
+
+.backoffice-page h2 {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.backoffice-page h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 3rem;
+  height: 2px;
+  background: linear-gradient(to right, rgba(212,175,55,1), rgba(212,175,55,0));
+}
+
+.backoffice-page p {
+  font-size: 1.4rem;
+  line-height: 1.7;
+  margin-bottom: 1.4rem;
+}
+
+.backoffice-list {
+  margin: 1.4rem 0;
+  padding-left: 1.2rem;
+  line-height: 1.6;
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #333;
+}
+
+.backoffice-list li {
+  list-style: none;
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+.backoffice-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.4rem;
+  width: 1rem;
+  height: 1rem;
+  background-image: url('../assets/images/crest-small.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+}
+
+.backoffice-panel {
+  background: rgba(255,255,255,0.55);
+  backdrop-filter: blur(6px);
+  border-left: 4px solid rgba(212,175,55,0.55);
+  border-radius: 8px;
+  padding: 2.5rem;
+  margin-top: 2rem;
+  animation: backofficeFade 1.2s ease-out 0.4s both;
+}
+
+@keyframes backofficeFade {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+
 /* BACK OFFICE — GOLD SIGNATURE BORDER */
 .back-office .split-right {
   border-left: 4px solid rgba(212, 175, 55, 0.55); /* soft gold */
