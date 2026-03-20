@@ -327,6 +327,23 @@ p {
   height: auto;
   opacity: 0.9;
 }
+.backoffice-footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.1rem;
+  color: #666;
+  opacity: 0.8;
+}
+/* PAGE FADE-IN */
+body {
+  opacity: 0;
+  animation: fadeIn 0.8s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
 
 
 /* ========================= */
