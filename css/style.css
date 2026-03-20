@@ -270,11 +270,14 @@ p {
   transform: translateY(20px);
   animation: heroFade 1.4s ease forwards;
 }
+
 @keyframes heroFade {
   to {
-    opacity: 0;
+    opacity: 1;
     transform: translateY(0);
   }
+}
+
 /* ========================= */
 /* GOLD SHIMMER ANIMATION   */
 /* ========================= */
@@ -288,10 +291,11 @@ p {
   100% {
     box-shadow: 0 12px 30px rgba(212, 175, 55, 0.10);
   }
+}
+
 /* ========================= */
 /* GOLD SHIMMER SWEEP        */
 /* ========================= */
-
 @keyframes goldSweep {
   0% {
     box-shadow: 0 12px 30px rgba(212, 175, 55, 0.10);
@@ -305,6 +309,11 @@ p {
     box-shadow: 0 12px 30px rgba(212, 175, 55, 0.10);
     filter: brightness(1);
   }
+}
+
+/* ========================= */
+/* ROYAL GLOW AURA           */
+/* ========================= */
 @keyframes royalGlow {
   0% {
     transform: scale(1);
@@ -312,32 +321,34 @@ p {
   }
   50% {
     transform: scale(1.08);
-    opacity: 0;
+    opacity: 1;
   }
   100% {
     transform: scale(1);
     opacity: 0.6;
   }
+}
+
 /* ========================= */
 /* ROSS HOUSE GOLD GLOW      */
 /* ========================= */
-
 @keyframes titleGlow {
   0% {
     text-shadow: 0 0 0px rgba(212, 175, 55, 0.0);
   }
   50% {
-    text-shadow: 
+    text-shadow:
       0 0 6px rgba(212, 175, 55, 0.35),
       0 0 12px rgba(212, 175, 55, 0.25);
   }
   100% {
     text-shadow: 0 0 0px rgba(212, 175, 55, 0.0);
   }
+}
+
 /* ========================= */
 /* GOLD UNDERLINE REVEAL     */
 /* ========================= */
-
 @keyframes goldUnderline {
   0% {
     width: 0%;
@@ -345,12 +356,14 @@ p {
   }
   40% {
     width: 100%;
-    opacity: 0;
+    opacity: 1;
   }
   100% {
     width: 100%;
     opacity: 1;
   }
+}
+
 @keyframes goldUnderlineShimmer {
   0% {
     box-shadow: 0 0 0 rgba(212, 175, 55, 0);
@@ -362,7 +375,3 @@ p {
     box-shadow: 0 0 0 rgba(212, 175, 55, 0);
   }
 }
-
-
-
-
