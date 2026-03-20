@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Ross House — Our Team</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* small additions for org page */
+    .org-wrap { padding:4rem; }
+    .org-header { display:flex; gap:1.2rem; align-items:center; margin-bottom:1.6rem; }
+    .org-title { font-size:2.6rem; }
+    .org-intro { max-width:900px; color:#444; margin-top:0.6rem; }
+    .org-tree { display:flex; gap:2rem; align-items:flex-start; margin-top:2rem; }
+    .org-column { flex:1; min-width:260px; }
+    .leader-card { display:flex; gap:1rem; align-items:center; padding:1rem; border-radius:8px; background:rgba(255,255,255,0.6); border-left:4px solid rgba(212,175,55,0.45); }
+    .leader-card img { width:84px; height:84px; border-radius:8px; object-fit:cover; }
+    .team-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:1rem; margin-top:1rem; }
+    .team-item { display:flex; gap:0.8rem; align-items:center; padding:0.6rem; border-radius:6px; background:rgba(255,255,255,0.55); cursor:pointer; }
+    .team-item img { width:56px; height:56px; border-radius:6px; object-fit:cover; }
+    .controls { margin-top:1.2rem; display:flex; gap:0.8rem; }
+    .video-placeholder { margin-top:1.6rem; border-radius:8px; overflow:hidden; background:#111; color:#fff; padding:1.2rem; text-align:center; }
+    .chatbox { margin-top:1.2rem; border-radius:8px; padding:1rem; background:linear-gradient(180deg,#fff,#f8f6f2); border-left:4px solid rgba(212,175,55,0.45); }
+    .chat-messages { max-height:220px; overflow:auto; padding:0.6rem; border-radius:6px; background:#fff; border:1px solid #eee; margin-bottom:0.6rem; }
+    .chat-input { display:flex; gap:0.6rem; }
+    .chat-input input { flex:1; padding:0.8rem; border-radius:6px; border:1px solid #ddd; }
+    .chat-input button { padding:0.8rem 1rem; border-radius:6px; background:rgba(212,175,55,0.9); color:#fff; border:none; cursor:pointer; }
+    @media (max-width:900px){ .org-tree{flex-direction:column;} .team-grid{grid-template-columns:repeat(1,1fr);} }
+  </style>
+</head>
+<body>
+
+<nav class="backoffice-nav">
+  <a href="index.html">Ross House</a><span>·</span>
+  <a href="backoffice.html">Back Office</a><span>·</span>
+  <a href="our-team.html">Our Team</a>
+</nav>
+
+<main class="backoffice-page org-wrap">
+
+  <div class="org-header">
+    <div>
+      <h1 class="org-title">Our Team</h1>
+      <div class="org-intro">
+        Let us introduce the team that makes Ross House sing. Click any leader to explore their team, open a profile, or ask an assistant to introduce themselves.
+      </div>
+    </div>
+  </div>
+
+  <div id="org-tree" class="org-tree" aria-live="polite">
+    <!-- rendered by JS -->
+  </div>
+
+  <section class="video-placeholder" id="video-area" aria-hidden="false">
+    <strong>Narrator Video</strong>
+    <p style="opacity:0.85;margin-top:0.6rem">Placeholder for AI narrator video. Replace with generated talking avatar or embed when ready.</p>
+    <button id="play-narrator" style="margin-top:0.8rem;padding:0.6rem 1rem;border-radius:6px;border:none;background:rgba(212,175,55,0.95);cursor:pointer">Play Narrator Intro</button>
+  </section>
+
+  <section class="chatbox" aria-label="Team Chat">
+    <h2 style="margin-top:0">Meet an Assistant</h2>
+    <div class="chat-messages" id="chat-messages" role="log"></div>
+    <div class="chat-input">
+      <input id="chat-input" placeholder="Say hello, or ask 'Introduce the Governance team'">
+      <button id="chat-send">Send</button>
+    </div>
+  </section>
+
+</main>
+
+<footer class="backoffice-footer">
+  <p>Ross House Back Office — Operational Wing of the Dynasty</p>
+</footer>
+
+<script src="assets/js/people-renderer.js"></script>
+</body>
+</html>
