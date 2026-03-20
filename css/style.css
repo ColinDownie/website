@@ -35,6 +35,19 @@ p {
   letter-spacing: 0.5px;
   color: #555;
 }
+/* BACK OFFICE LIST — ELEGANT, MINIMAL, ROSS HOUSE */
+.backoffice-list {
+  margin: 1.4rem 0;
+  padding-left: 1.2rem;
+  line-height: 1.6;
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #333;
+}
+
+.backoffice-list li {
+  margin-bottom: 0.8rem;
+}
 
 /* ========================= */
 /* SPLIT SCREEN LAYOUT       */
@@ -62,6 +75,52 @@ p {
   border-radius: 4px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
+/* BACK OFFICE — GOLD SIGNATURE BORDER */
+.back-office .split-right {
+  border-left: 4px solid rgba(212, 175, 55, 0.55); /* soft gold */
+  padding-left: 2rem;
+}
+/* BACK OFFICE — TITLE GLOW */
+.back-office h2 {
+  position: relative;
+}
+
+.back-office h2::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 180%;
+  height: 180%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(
+    circle,
+    rgba(212, 175, 55, 0.25) 0%,
+    transparent 70%
+  );
+  z-index: -1;
+  pointer-events: none;
+}
+/* BACK OFFICE — CREST BULLET POINTS */
+.backoffice-list li {
+  list-style: none;
+  position: relative;
+  padding-left: 2rem;
+}
+
+.backoffice-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.4rem;
+  width: 1rem;
+  height: 1rem;
+  background-image: url('../assets/images/crest-small.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+}
+
 
 /* ========================= */
 /* HERO — C3-C POSTER LAYOUT */
@@ -416,4 +475,60 @@ p {
   100% {
     box-shadow: 0 0 0 rgba(212, 175, 55, 0);
   }
+}
+/* BACK OFFICE — FADE IN */
+@keyframes backofficeFade {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.back-office .split-right {
+  animation: backofficeFade 1.2s ease-out 0.4s both;
+}
+/* BACK OFFICE — GOLD UNDERLINE FOR SUBHEADERS */
+.back-office h3 {
+  position: relative;
+  margin-bottom: 1rem;
+  padding-bottom: 0.4rem;
+}
+
+.back-office h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 3rem;
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    rgba(212, 175, 55, 1),
+    rgba(212, 175, 55, 0)
+  );
+}
+/* BACK OFFICE — SOFT PANEL */
+.back-office .split-right {
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(6px);
+  border-radius: 8px;
+  padding: 2.5rem;
+}
+/* BACK OFFICE — GOLD PARTICLE SPARKLE */
+.back-office {
+  position: relative;
+}
+
+.back-office::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 120px;
+  height: 120px;
+  background: radial-gradient(
+    circle,
+    rgba(212, 175, 55, 0.35) 0%,
+    transparent 70%
+  );
+  filter: blur(12px);
+  pointer-events: none;
 }
