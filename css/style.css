@@ -772,3 +772,19 @@ body {
   filter: blur(14px);
   pointer-events: none;
 }
+.backoffice-page {
+  position: relative;
+  overflow: hidden;
+}
+
+.backoffice-page::before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  width: 180px;
+  height: 180px;
+  background: radial-gradient(circle, rgba(212,175,55,0.35), transparent 70%);
+  filter: blur(14px);
+  pointer-events: none;
+}
