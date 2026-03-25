@@ -98,7 +98,37 @@ body {
 .everlight-nav a:hover::after {
   width: 100%;
 }
+/* Ross House Footer */
 
+.ross-house-footer {
+  background: #0a0a0a;
+  padding: 50px 0 40px;
+  text-align: center;
+  border-top: 2px solid #333;
+  margin-top: 80px;
+}
+
+.ross-house-footer-crest img {
+  width: 60px;
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+
+.ross-house-footer-text {
+  color: #e0d8c3;
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.ross-house-footer-sub {
+  color: #a89f8a;
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
 body {
   padding-top: 80px;
 }
