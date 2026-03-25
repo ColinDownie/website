@@ -1,58 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Ross House — Document Library</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<nav class="backoffice-nav">
-  <a href="index.html">Ross House</a>
-  <span>·</span>
-  <a href="backoffice.html">Back Office</a>
-  <span>·</span>
-  <a href="backoffice-documents.html">Document Library</a>
-</nav>
-
-<div class="backoffice-breadcrumb">
-  <a href="index.html">Home</a> /
-  <a href="backoffice.html">Back Office</a> /
-  <span>Document Library</span>
-</div>
-
-<main class="backoffice-page">
+<header class="backoffice-lintel">
+  <div class="backoffice-return">
+    <a href="backoffice.html">← Back Office</a>
+  </div>
 
   <div class="backoffice-crest">
-    <img src="assets/images/crest-backoffice.png" alt="Back Office Crest">
+    <img src="assets/images/crest-small.png" alt="Ross House Crest">
+  </div>
+
+  <nav class="backoffice-menu">
+    <a href="backoffice.html">Back Office</a>
+    <a href="archive.html">Archive</a>
+    <a href="governance.html">Governance</a>
+    <a href="documentation.html">Documentation</a>
+    <a href="systems.html">Systems</a>
+    <a href="emotional.html">Emotional Architecture</a>
+  </nav>
+</header>
+
+<main class="backoffice-page back-office backoffice-documents">
+
+  <div class="backoffice-crest">
+    <img src="assets/images/crest-documentation.png" alt="Document Crest">
   </div>
 
   <h1>Document Library</h1>
 
   <div class="backoffice-panel">
 
-    <h2>Templates</h2>
+    <h2>Overview</h2>
+    <p>The Document Library contains templates, charters, scripts, and operational documents used across Ross House.</p>
+
+    <h2>Document Categories</h2>
     <ul class="backoffice-list">
-      <li><a href="backoffice-docs/charter-template.html">Charter Template</a></li>
+      <li><a href="charter-template.html">Charter Templates</a></li>
+      <li><a href="ritual-scripts.html">Ritual Scripts</a></li>
+      <li><a href="production-bibles.html">Production Bibles</a></li>
+      <li><a href="onboarding-flows.html">Onboarding Flows</a></li>
+      <li><a href="house-handbooks.html">House Handbooks</a></li>
     </ul>
 
-    <h2>Core Documents</h2>
-    <ul class="backoffice-list">
-      <li>Governance Charter (coming soon)</li>
-      <li>Systems Protocol (coming soon)</li>
-      <li>Archive Index (coming soon)</li>
-      <li>Emotional Codex (coming soon)</li>
-    </ul>
+    <h2>Access</h2>
+    <p>All documents are maintained by the Documentation Division and versioned through the Systems Division.</p>
 
   </div>
 
 </main>
 
 <footer class="backoffice-footer">
-  <p>Ross House Back Office — Operational Wing of the Dynasty</p>
+  <div class="backoffice-footer-crest">
+    <img src="assets/images/crest-small.png" alt="Ross House Crest">
+  </div>
+  <p class="backoffice-footer-text">Ross House Back Office — Operational Wing of the Dynasty</p>
+  <p class="backoffice-footer-sub">Records. Governance. Systems. Continuity.</p>
 </footer>
 
+<script src="assets/js/backoffice.js"></script>
 </body>
 </html>
