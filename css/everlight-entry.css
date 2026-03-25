@@ -1,0 +1,193 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #000;
+  color: #f5f5f5;
+}
+
+.everlight-viewport {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+
+  /* Everlight crest background */
+  background-image: url("../assets/images/everlight-entry.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Optional subtle overlay for legibility */
+.everlight-viewport::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(0,0,0,0.1), rgba(0,0,0,0.6));
+  pointer-events: none;
+}
+
+/* Elemental buttons */
+
+.element-button {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6rem 1.2rem;
+  border-radius: 999px;
+  text-decoration: none;
+  color: #111;
+  font-size: 0.9rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-weight: 600;
+  box-shadow: 0 0 12px rgba(0,0,0,0.6);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255,255,255,0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+/* Positions roughly aligned with the four corners of the circle/eye */
+.element-fire {
+  top: 12%;
+  left: 18%;
+  background: rgba(255, 180, 150, 0.9);
+}
+
+.element-air {
+  top: 12%;
+  right: 18%;
+  background: rgba(190, 215, 255, 0.9);
+}
+
+.element-water {
+  bottom: 14%;
+  left: 18%;
+  background: rgba(175, 205, 245, 0.9);
+}
+
+.element-earth {
+  bottom: 14%;
+  right: 18%;
+  background: rgba(185, 225, 185, 0.9);
+}
+
+.element-button:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 0 18px rgba(0,0,0,0.9);
+}
+
+/* Text stack at bottom centre */
+
+.everlight-text {
+  position: absolute;
+  bottom: 6%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.9);
+  padding: 0 1rem;
+}
+
+/* Approximate CRM feel: tall, spaced, geometric */
+.everlight-title {
+  font-size: 2.4rem;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: #f5e3b8;
+  margin-bottom: 0.4rem;
+}
+
+.everlight-motto {
+  font-size: 0.9rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #e0d0a0;
+  margin-bottom: 0.4rem;
+}
+
+.everlight-subtitle {
+  font-size: 0.85rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #f0f0f0;
+}
+
+/* Responsive tweaks */
+
+@media (max-width: 900px) {
+  .element-fire,
+  .element-air,
+  .element-water,
+  .element-earth {
+    font-size: 0.75rem;
+    padding: 0.45rem 0.9rem;
+  }
+
+  .element-fire {
+    top: 8%;
+    left: 8%;
+  }
+
+  .element-air {
+    top: 8%;
+    right: 8%;
+  }
+
+  .element-water {
+    bottom: 10%;
+    left: 8%;
+  }
+
+  .element-earth {
+    bottom: 10%;
+    right: 8%;
+  }
+
+  .everlight-title {
+    font-size: 1.8rem;
+    letter-spacing: 0.25em;
+  }
+
+  .everlight-subtitle {
+    font-size: 0.75rem;
+    letter-spacing: 0.14em;
+  }
+}
+
+@media (max-width: 600px) {
+  .element-fire,
+  .element-air,
+  .element-water,
+  .element-earth {
+    position: static;
+    display: inline-flex;
+    margin: 0.3rem;
+  }
+
+  .everlight-viewport {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 5rem;
+  }
+
+  .everlight-text {
+    position: static;
+    transform: none;
+    margin-top: 1rem;
+  }
+}
