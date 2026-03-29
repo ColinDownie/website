@@ -1,32 +1,49 @@
-## ⭐ The Ross Multiverse — Departmental Structure
+# ROSS STUDIO  
+### A Department of Ross Creative  
+*Artefacts • 3D Craft • Digital Forging*
 
-Ross Creative is supported by six departments, each a facet of the same creative force:
+---
 
-### 🟦 Ross Consulting  
-Clarity, resilience, growth, legal insight.  
-The strategic mind of the multiverse.
+## ⭐ The Role of Ross Studio
 
-### 🎨 Ross Studio  
-Artefacts, 3D craft, digital forging.  
-The creative engine and workshop.
+Ross Studio is the creative engine of the Ross Creative Multiverse.  
+This is the forge — the place where imagination becomes artefacts,  
+artefacts become collections,  
+and collections become universes.
 
-### 🏛️ Ross Property  
-Structure, space, flow, foundations.  
-The architectural backbone.
+From Meshy to Sketchfab to Marketiger,  
+Ross Studio is where digital alchemy becomes visible, tangible, and real.
+
+---
+
+## ⭐ Sub‑Departments of Ross Studio
 
 ### 🎨 Ross Design  
-Branding, identity, visual language.  
-The aesthetic compass.
+Branding, identity, visual language, creative direction.  
+The aesthetic compass of the multiverse.
 
 ### 🧵 Ross Textiles  
-Patterns, surfaces, materials.  
+Patterns, surfaces, materials, tactile imagination.  
 Where digital becomes physical.
 
 ### 💻 Ross Digital  
-AI, automation, pipelines, and innovation.  
-The department that powers the alchemy —  
-building systems, workflows, and intelligent tools that amplify every other division.  
-Ross Digital is the engine room of the future:  
-where code meets creativity,  
-where automation meets artistry,  
-and where the impossible becomes operational.
+AI, automation, pipelines, innovation.  
+The department that powers the alchemy.
+
+---
+
+## ⭐ What This Repository Is For
+
+This folder houses:
+
+- artefact concepts  
+- 3D workflows  
+- Meshy prompts  
+- Sketchfab publishing notes  
+- Marketiger print pipelines  
+- the evolving canon of Ross Studio  
+- the sub‑departments that support the creative engine  
+
+This is the workshop.  
+The digital forge.  
+The birthplace of the Ross Creative artefact library.
